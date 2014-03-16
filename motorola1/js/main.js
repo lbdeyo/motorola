@@ -1,5 +1,23 @@
 var bottomAnchor, scrollMax = 2100;
 
+
+// Only run this on desktops or tablets
+if (window.matchMedia("(min-width: 600px)").matches) {
+
+	$(window).scroll(function() {
+
+		if( $(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+			$('.navbar-fixed-bottom').addClass('on');
+		}
+		else if( $('.navbar-fixed-bottom').hasClass('on') && ( $(window).scrollTop() + $(window).height() < $(document).height() - 100) ){
+			$('.navbar-fixed-bottom').removeClass('on');
+		}
+
+	});
+}
+
+
+
 $(document).ready(function(){
 
   //  $('body').scrollspy({ target: '.navbar-fixed-top' })
