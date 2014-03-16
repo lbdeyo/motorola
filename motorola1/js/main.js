@@ -6,7 +6,7 @@ if (window.matchMedia("(min-width: 600px)").matches) {
 
 	$(window).scroll(function() {
 
-		if( $(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+		if( $(window).scrollTop() + $(window).height() > $(document).height() - 80) {
 			$('.navbar-fixed-bottom').addClass('on');
 		}
 		else if( $('.navbar-fixed-bottom').hasClass('on') && ( $(window).scrollTop() + $(window).height() < $(document).height() - 100) ){
@@ -39,12 +39,12 @@ $(document).ready(function(){
 //            scrollMax += 1000;
 //            console.log ("increasing scrollmax");
 //        }
-//        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
 //            // you're at the bottom of the page
 //            gotoBottomNavState();
 //        } else {
-//            gotoTopNavState();
-//        }
+          //  gotoTopNavState();
+        }
 //        console.log("scrollmax: "+scrollMax);
 //        console.log(getScrollY());
 //        if (getScrollY() > scrollMax )
@@ -150,14 +150,14 @@ $(document).ready(function(){
 
     function gotoBottomNavState(){
         $("#topNavLogo").hide();
-        $(".navBottomRow").show();
-        $(".hrRow").show();
+       // $(".navBottomRow").show();
+      //  $(".hrRow").show();
 
     }
 
     function gotoTopNavState(){
         $("#topNavLogo").show();
-        $(".navBottomRow").hide();
-        $(".hrRow").hide();
+      //  $(".navBottomRow").hide();
+      //  $(".hrRow").hide();
     }
 });
