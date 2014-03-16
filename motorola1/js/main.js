@@ -2,7 +2,7 @@ var bottomAnchor, scrollMax = 2100;
 
 $(document).ready(function(){
 
-    $('body').scrollspy({ target: '.navbar-fixed-top' })
+  //  $('body').scrollspy({ target: '.navbar-fixed-top' })
     onWindowResize();
     gotoTopNavState();
     $(window).resize(function(e){
@@ -21,12 +21,12 @@ $(document).ready(function(){
 //            scrollMax += 1000;
 //            console.log ("increasing scrollmax");
 //        }
-        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-            // you're at the bottom of the page
-            gotoBottomNavState();
-        } else {
-            gotoTopNavState();
-        }
+//        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+//            // you're at the bottom of the page
+//            gotoBottomNavState();
+//        } else {
+//            gotoTopNavState();
+//        }
 //        console.log("scrollmax: "+scrollMax);
 //        console.log(getScrollY());
 //        if (getScrollY() > scrollMax )
@@ -37,8 +37,29 @@ $(document).ready(function(){
 //
 //
 //        }
-        $(".navLink").css("color", "#00a0df");
+      // $(".navLink").css("color", "#00a0df");
 
+    });
+
+
+    $('.navLink').click(function(){
+
+     //   $('.navLink').removeClass('active');
+
+        //$(this).addClass('active');
+
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+        $('html,body').animate({
+        scrollTop: (target.offset().top - 55)
+        }, 1000);
+
+        }
+       
+        }
+     return false;
     });
 
 

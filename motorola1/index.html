@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet/less" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" href="css/fonts.css">
 </head>
-<body id="index"  data-spy="scroll" data-target=".navbar-nav">
+<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1" data-offset="70">
 <!--Top nav-->
-=
+
 <nav class="navbar  navbar-default navbar-fixed-top" role="navigation">
     <div class="container topnavContainer">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -27,6 +27,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
+
+                <li class="hide"><a aria-hidden="true" href="#top"></a></li>
                 <li ><a href="#vidSection" class="navLink">Watch the video</a></li>
                 <li ><a href="#infoSection" class="navLink" >See the stats</a></li>
                 <li ><a href="#formSection" class="navLink">download white paper</a></li>
@@ -48,7 +50,7 @@
 
     </div>
 </div>
-<div class="row grayRow">
+<div id="top" class="row grayRow">
 
     <div class="col-md-12 ">
 
@@ -68,8 +70,7 @@
         <h4>Discover how the right technology can help transform your warehouse from a cost center to a growth area.</h4>
     </div>
 </div>
-<a id="vidSection"></a>
-<div class="row grayRow">
+<div id="vidSection"class="row grayRow">
     <div class="col-md-12 ">
         <img id="vid" src="img/motorola1_landing_vid.png">
     </div>
@@ -78,9 +79,9 @@
 
 
 <!--Infographic section-->
-<a id="infoSection"></a>
 
-<div class="row grayRow offsetRow">
+
+<div id="infoSection" class="row grayRow offsetRow">
     <div class="col-md-3 ">
         <img id="infographic" src="img/motorola1_landing_infographic.png">
     </div>
@@ -116,9 +117,8 @@
 
 
 <!--form section-->
-<a id="formSection"></a>
 
-<div class="row grayRow offsetRow">
+<div id="formSection" class="row grayRow offsetRow">
     <div class="col-md-5">
         <img id="landingNotebook" src="img/motorola1_thankyou_notebook.png">
     </div>
@@ -178,7 +178,7 @@
 
 <!-- bottom section-->
 <a id="solutionSection"></a>
-<div class="row grayRow offsetRow">
+<div  class="row grayRow offsetRow">
     <div class="row">
         <div class="col-md-12">
             <h1 id="bottomSectionHeader">Our solutions don't stop there.</h1>
@@ -193,7 +193,7 @@
 
     </div>
     <div class="row bottomRow">
-        <div class="col-sm-3">
+        <div class="col-sm-4">
             <ul class="solutionsList">
                 <li>Voice-directed and multi-modal picking<img class="rightArrow" src="img/motorola1_landing_gray_arrow.png"> </li>
                 <li>Staff communications and management<img class="rightArrow" src="img/motorola1_landing_gray_arrow.png"> </li>
@@ -201,9 +201,9 @@
                 <li>Rfid solutions for warehouses and distribution centers<img class="rightArrow" src="img/motorola1_landing_gray_arrow.png"> </li>
 
             </ul>
+            <div class="vr" ></div>
         </div>
-        <div class="col-sm-1"><div class="vr" ></div></div>
-        <div class="col-sm-3">
+        <div class="col-sm-4">
             <ul class="solutionsList">
                 <li>Cycle count and inventory management<img class="rightArrow" src="img/motorola1_landing_gray_arrow.png"> </li>
                 <li>Put away and replenishment<img class="rightArrow" src="img/motorola1_landing_gray_arrow.png"> </li>
@@ -211,10 +211,10 @@
                 <li>Packing and staging<img class="rightArrow" src="img/motorola1_landing_gray_arrow.png"> </li>
                 <li>Shipping and delivery<img class="rightArrow" src="img/motorola1_landing_gray_arrow.png"> </li>
             </ul>
+            <div class="vr" ></div>
         </div>
-        <div class="col-sm-1"><div class="vr" ></div></div>
 
-        <div class="col-sm-3">
+        <div class="col-sm-4">
             <ul class="solutionsList">
                 <li>Industrial wireless solutions<img class="rightArrow" src="img/motorola1_landing_gray_arrow.png"> </li>
                 <li>Receiving and sortation<img class="rightArrow" src="img/motorola1_landing_gray_arrow.png"> </li>
@@ -266,8 +266,8 @@
 </script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="js/jquery-min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/less.js" type="text/javascript"></script>
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/less.js" type="text/javascript"></script>-->
 <!--<script src="js/TweenMax.min.js"></script>-->
 <script src="js/main.js"></script>
 <script src="js/nav.js"></script>
