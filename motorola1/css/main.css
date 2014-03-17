@@ -77,7 +77,6 @@ p {
 }
 .indexContainer {
   margin-top: -20px;
-  min-width: 570px;
 }
 .navdiv {
   margin-left: 30px;
@@ -162,13 +161,10 @@ ul {
 }
 #downloadButton {
   padding-top: 5px;
-  padding-left: 15%;
-  margin-left: 45px;
   text-transform: uppercase;
   color: white;
   font-family: "UniversLTW01-67BoldCn";
   font-size: 22px;
-  width: 460px;
   height: 41px;
   background-image: url('../img/motorola1_thankyou_buttonbg.png');
   margin-bottom: 15px;
@@ -177,6 +173,14 @@ ul {
   color: white;
   text-decoration: none;
   text-align: center;
+}
+@media only screen and (min-width: 600px) {
+  #downloadButton {
+    width: 460px;
+    padding-left: 15%;
+    margin-left: 45px;
+  }
+  /* Styles */
 }
 .notebook {
   margin-top: 47px;
@@ -354,9 +358,14 @@ td p {
   margin-left: 10px;
 }
 .bottomRow {
-  height: 310px;
   padding-bottom: 0px;
-  margin-bottom: -40px;
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 600px) {
+  .bottomRow {
+    height: 310px;
+    margin-bottom: -40px;
+  }
 }
 .navbar-fixed-bottom {
   box-shadow: 0px 0px 5px black;
