@@ -143,37 +143,30 @@ ul {
 }
 #infographicButton {
   padding-top: 3px;
-  padding-left: 20%;
-  margin-left: 5px;
+  /*padding-left: 20%;*/
+  /*margin-left: 5px;*/
   text-transform: uppercase;
+    text-decoration: none;
   color: white;
-  font-family: "UniversLTW01-67BoldCn";
+  /*font-family: "UniversLTW01-67BoldCn";*/
   font-size: 22px;
   width: 450px;
   height: 41px;
-  background-image: url('../img/motorola1_thankyou_buttonbg.png');
+  /*background-image: url('../img/motorola1_thankyou_buttonbg.png');*/
   margin-bottom: 15px;
 }
-#infographicButton a {
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
+
 #downloadButton {
   padding-top: 5px;
   text-transform: uppercase;
+    text-decoration: none;
   color: white;
-  font-family: "UniversLTW01-67BoldCn";
+    margin-left: -80px;
   font-size: 22px;
   height: 41px;
-  background-image: url('../img/motorola1_thankyou_buttonbg.png');
   margin-bottom: 15px;
 }
-#downloadButton a {
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
+
 @media only screen and (min-width: 600px) {
   #downloadButton {
     width: 460px;
@@ -417,3 +410,11 @@ td p {
   margin-top: 2px;
   vertical-align: top;
 }
+
+#thankyouRow
+{
+    position: absolute;
+    padding-top: 50px;
+    top: -50px;
+    bottom: 0px;
+    max-width: 990px;}

@@ -30,14 +30,7 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
 
-//        bottomAnchor = document.getElementById('pageBottom').offsetTop;
-//        scrollMax = bottomAnchor;
-//        console.log("bottomAnchor: "+scrollMax);
-//        var windowWidth = $(window).width();
-//        if (windowWidth < 776)
-//        {
-//            scrollMax += 1000;
-//            console.log ("increasing scrollmax");
+
 //        }
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
 //            // you're at the bottom of the page
@@ -45,17 +38,7 @@ $(document).ready(function(){
 //        } else {
           //  gotoTopNavState();
         }
-//        console.log("scrollmax: "+scrollMax);
-//        console.log(getScrollY());
-//        if (getScrollY() > scrollMax )
-//        {
-//
-//        } else {
-//
-//
-//
-//        }
-      // $(".navLink").css("color", "#00a0df");
+
 
     });
 
@@ -82,7 +65,11 @@ $(document).ready(function(){
 
 
     function onWindowResize(){
+        console.log('body id: '+$('body').attr('id'));
+
         bottomAnchor = document.getElementById('pageBottom').offsetTop;
+        $(".bothSocials").show();
+        $(".mobileFooter").hide();
         console.log("bottomAnchor: "+bottomAnchor);
         var windowWidth = $(window).width();
         var containerWidth = $(".indexContainer").width();
@@ -90,9 +77,9 @@ $(document).ready(function(){
         console.log("containerWidth: "+ containerWidth);
         var cWidthString = containerWidth + "px";
         $("#vid").css("width", cWidthString);
-        TweenMax.set($("#infographicButton"), {scaleX:1, scaleY:1} );
-        TweenMax.set($("#downloadButton"), {scaleX:1, scaleY:1} );
-        TweenMax.set($("#whitePaperButton"), {scaleX:1, scaleY:1} );
+        TweenMax.set($("#infographicButton"), {scaleX:0.8, scaleY:0.8} );
+        TweenMax.set($("#downloadButton"), {scaleX:0.8, scaleY:0.8} );
+        TweenMax.set($("#whitePaperButton"), {scaleX:0.8, scaleY:0.8} );
 //        $("#socialIcons").css("margin-left", '-50px');
 
 //        TweenMax.set($("#socialIcons"), {scaleX: 1, scaleY:1});
@@ -124,10 +111,26 @@ $(document).ready(function(){
         }
 
         if (windowWidth < 766){
+            $("body").css("background-color", "#292929");
+            $(".bothSocials").hide();
+            $(".mobileFooter").show();
 //            $("#infographicButton")
-            TweenMax.set($("#infographicButton"), {scaleX:0.85, scaleY:0.85} );
-            TweenMax.set($("#downloadButton"), {scaleX:0.85, scaleY:0.85} );
+            TweenMax.set($("#infographicButton"), {scaleX:0.6, scaleY:0.6} );
+            $("#infographicButton").css("padding-left", "0px");
+            $("#infographicButton").css("margin-left", "-85px");
+//            $("#infographicButton").css("width", "200px");
+//            $("infographicButton").css("font-size", "0.25em");
+            TweenMax.set($("#downloadButton"), {scaleX:0.6, scaleY:0.6} );
+            $("#downloadButton").css("padding-left", "0px");
+            $("#downloadButton").css("margin-left", "-85px");
             TweenMax.set($("#whitePaperButton"), {scaleX:0.85, scaleY:0.85} );
+            TweenMax.set($("#landingNotebook"), {scaleX: 0.6, scaleY:  0.6});
+            $("#landingNotebook").css("padding", "0px");
+            $("#landingNotebook").css("margin-left", "-80px");
+            $("#landingNotebook").css("margin-top", "-80px");
+            $("#landingNotebook").css("margin-bottom", "-80px");
+
+
 //            TweenMax.set($(".chatCallDiv"), {scaleX:0.65, scaleY:0.65} );
 //            $("#socialIcons").css("margin-left", '-50px');
             $("#chatPhone").css("margin-left", '-50px');
@@ -136,6 +139,7 @@ $(document).ready(function(){
             $(".formTable").css("margin-left", "5px");
 
             $(".indexContainer").css("padding-top", "50px");
+            TweenMax.set($(".notebook"), {scaleX:0.8, scaleY:0.8} );
             $(".vr").hide();
 
         }
@@ -149,15 +153,20 @@ $(document).ready(function(){
     }
 
     function gotoBottomNavState(){
+        console.log("go to bottom nav state");
         $("#topNavLogo").hide();
-       // $(".navBottomRow").show();
+       $(".navBottomRow").show();
+        $(".legal").show();
       //  $(".hrRow").show();
 
     }
 
     function gotoTopNavState(){
+        console.log("go to top nav state");
         $("#topNavLogo").show();
-      //  $(".navBottomRow").hide();
-      //  $(".hrRow").hide();
+//        $(".navBottomRow").hide();
+//        $(".legal").hide();
+
+        //  $(".hrRow").hide();
     }
 });

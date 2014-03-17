@@ -378,6 +378,9 @@ section#solutionsSection div.column ul li a:hover {
 
 /***** Footer *****/
 
+.mobileFooter {
+    display: none;
+}
 footer {
     background-color: #FFF;
     font-family: "UniversLTW01-57Condense 723821";
