@@ -31,7 +31,7 @@ h1 {
     font-weight: normal;
     font-size: 1.9em;
     text-transform: uppercase;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
     line-height: 0.9em;
 }
 h2 {
@@ -183,7 +183,8 @@ td p {
 
 #topSection h1 {
     border-top: solid 1px #ff7900;
-    padding-top: 25px;
+    /*padding-top: 25px;*/
+    /*margin-top: -50px;*/
 
 }
 
@@ -292,6 +293,29 @@ section#tourSection h1 {
     margin-top: -350px;
 
 }
+.mainOrange {
+    /*display: block;*/
+}
+
+.space {
+    /*margin: 5px;*/
+    /*display: block;*/
+    /*word-spacing: 5px;*/
+    margin: 0 50px 0 10px;
+}
+#orangeBlock {
+    font-family: "UniversLTW01-67BoldCn";
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left:  auto;
+    margin-right: auto;
+    margin-top: 0px;
+    color: white;
+
+}
+
 section#tourSection a#download:hover {
     background-color: #CCC;
     color: #FFF;
@@ -407,12 +431,14 @@ footer div#contact div#group a#clickToCall {
 }
 /* Terms */
 footer div#terms {
-    width: 960px;
-    margin: 0 auto;
-    padding: 10px 10px 10px;
     font-size: 0.8em;
-    border-top: solid 1px #ff7900;
+
 }
+
+#orangeRowBG {
+    background-color: #ff7900;
+}
+
 footer div#terms a#logo {
     text-indent: -9999px;
     overflow: hidden;
@@ -427,10 +453,18 @@ footer div#terms a#logo {
 footer div#terms p {
     float: right;
     padding-top: 5px;
+    border-top: solid 1px #ff7900;
 }
 footer div#terms p a {
     text-decoration: none;
     color: #ff7900;
+}
+
+.bottomBlock {
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px 10px 10px;
+
 }
 
 #radioPic {
@@ -500,6 +534,16 @@ section#topSection {
     /*padding: 20px;*/
     padding-top: 60px;
     padding-right: 20px;
+    /*float: left;*/
+}
+
+.whitePaperGraphicContainer {
+    float: left;
+}
+
+.formDiv {
+    /*float: right;*/
+    /*margin-top: -50px;*/
 }
 
 #inThisWhitepaper {
@@ -513,6 +557,16 @@ section#topSection {
 
 
 }
+
+#learnHowHeader {
+    padding-top: 0px;
+    margin-top: -20px;
+}
+
+#mainHeadline {
+    padding-top: 20px;
+}
+
 input, select {
     width: 300px;
 }

@@ -46,6 +46,7 @@ footer div#contact div#group a#clickToChat {
 }
 footer div#contact div#group a#clickToCall {
 	display: block;
+    margin-left: 5px;
 }
 
 /***** Tablet Landscape *****/
