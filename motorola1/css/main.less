@@ -1,0 +1,592 @@
+
+@bgcolor: #D3D3D3;
+@rowbgcolor: #292929;
+@mainBlue: #00a0df;
+@base: #f938ab;
+
+//.box-shadow(@style, @c) when (iscolor(@c)) {
+//  -webkit-box-shadow: @style @c;
+//  box-shadow:         @style @c;
+//}
+//.box(@style, @alpha: 50%) when (isnumber(@alpha)) {
+//  .box-shadow(@style, rgba(0, 0, 0, @alpha));
+//}
+
+
+a {
+  color: @mainBlue;
+  text-decoration: underline;
+}
+
+.blueText {
+  color: @mainBlue;
+}
+
+body {
+  background-color: @bgcolor;
+  padding-bottom: 40px;
+  font-family: "UniversLTW01-57Condense 723821";
+
+}
+
+#topNav {
+  background-color: @rowbgcolor;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  border: none;
+  color: #ffffff;
+
+}
+
+#topNavLogo {
+  margin-top: -5px;
+}
+
+#infographic {
+  padding-top: 30px;
+  padding-left: 30px;
+  margin-right: -20px;
+  padding-bottom: 20px;
+
+}
+
+
+.container {
+    max-width: 990px;
+
+  .darkRow {
+    padding-bottom: 10px;
+  }
+
+}
+
+.grayRow {
+  background-color: @rowbgcolor;
+}
+
+#bottomNav {
+  background-color: white;
+  .row {
+    background-color: white;
+  }
+  .navBottom
+  {
+    background-color: white;
+  }
+}
+
+.navbar-fixed-top
+{
+  border: none;
+  color: white;
+  background-color: @bgcolor;
+}
+
+.navbar-nav
+{
+  position: relative;
+  margin-right:  0px;
+  left: 100px;
+}
+
+
+.iconText {
+  display: inline;
+  line-height: 2px;
+  a {
+    font-family: "UniversLTW01-67BoldCn";
+    text-decoration: none;
+  }
+}
+.tallRow {
+  height: 1500px;
+  background-image: url('../img/gray.png');
+}
+p {
+  font-family: "UniversLTW01-57Condense 723821";
+  font-weight: normal;
+  color: white;
+
+
+}
+
+//.chatCallDiv
+//{
+//  width: 90%;
+//}
+
+#seventy {
+  margin-right: -20px;
+  margin-bottom: 20px;
+}
+
+.indexContainer {
+  margin-top: -20px;
+//  position:relative;
+//  min-width: 570px;
+
+}
+.navdiv {
+  margin-left: 30px;
+  color: white;
+}
+
+.navbar-nav {
+  color: white;
+}
+.navBar {
+  border: 2px solid @rowbgcolor;
+  color: white;
+}
+
+.nav {
+//  border: 2px solid @rowbgcolor;
+  color: white;
+  border: none;
+
+}
+.navLink {
+  font-family: "UniversLTW01-67BoldCn";
+  font-weight: normal;
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  padding-right: 25px;
+
+  a {
+    color: white;
+  }
+
+  a:visited{
+    color: white;
+  }
+
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+
+
+}
+
+.whiteBG {
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+.padTopRow
+{
+  margin-top: 10px;
+}
+
+.topNav {
+  padding-top: 10px;
+  border: 3px solid @rowbgcolor;
+}
+
+#whitePaperButton {
+  //  padding-top: 50px;
+  //  margin-left: 48px;
+  margin-top: 33px;
+  display: none;
+  text-transform: uppercase;
+  color: white;
+  margin-left: 48px;
+  font-family: "UniversLTW01-67BoldCn";
+  font-size: 23px;
+  width: 472px;
+  height: 41px;
+  background-image: url('../img/motorola1_thankyou_buttonbg.png');
+  margin-bottom: 15px;
+
+}
+
+.navbar-fixed-top
+{
+}
+
+.topnavContainer {
+  background-color: @rowbgcolor;
+//  background-color: white;
+
+}
+
+#infographicButton {
+  padding-top: 3px;
+  padding-left: 20%;
+  margin-left: 5px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "UniversLTW01-67BoldCn";
+  font-size: 22px;
+  width: 450px;
+  height: 41px;
+  background-image: url('../img/motorola1_thankyou_buttonbg.png');
+  margin-bottom: 15px;
+  a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+
+}
+
+#downloadButton {
+  padding-top: 5px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "UniversLTW01-67BoldCn";
+  font-size: 22px;
+
+  height: 41px;
+  background-image: url('../img/motorola1_thankyou_buttonbg.png');
+  margin-bottom: 15px;
+  a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+
+}
+
+
+
+@media only screen and (min-width : 600px) {
+  #downloadButton {
+    width: 460px;    
+  padding-left: 15%;
+  margin-left: 45px;
+  }
+
+/* Styles */
+}
+
+
+
+.notebook {
+  margin-top: 47px;
+  padding-left: 25px;
+
+}
+
+#landingNotebook
+{
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-bottom:15px;
+}
+.innerButton{
+  margin-top: -36px;
+  margin-left: 50px;
+
+}
+
+#weknow {
+
+  width: 85%;
+  font-size: 14pt;
+  margin-top: 25px;
+  margin-left: 48px;
+  line-height: 22px;
+
+
+
+}
+
+
+.legal {
+  margin-top:18px;
+ // margin-left: 5px;
+ text-align: right;
+}
+.legal span {
+  text-align: right;
+}
+
+#navLogo {
+  margin-right: 10px;
+  margin-top: 10px;
+
+}
+
+.navBottomRow {
+
+  padding-bottom: 20px;
+
+
+}
+
+h1 {
+  font-family: "UniversLTW01-67BoldCn";
+  font-weight: normal;
+  font-size: 40pt;
+  text-transform: uppercase;
+  margin-top: 50px;
+  padding-left: 48px;
+  line-height: 37pt;
+  color: white;
+  width: 95%;
+
+
+}
+
+#vid {
+  margin-bottom: 15px;
+  //  margin-left: 25px;
+  //  margin-right: auto;
+}
+
+
+#superheader {
+  font-size: 43pt;
+  margin-top: 20px;
+  padding-left: 5px;
+
+}
+
+#nonsuperheader {
+  font-size: 34pt;
+  margin-top: 15px;
+  padding: 0px;
+  //  margin-left: -40px;
+}
+
+
+#formHeader {
+  font-size: 32pt;
+  margin-top: 15px;
+  margin-left: 0px;
+  //  padding: 0px;
+  //  margin-left: -40px;
+}
+
+h3 {
+  font-family: "UniversLTW01-67BoldCn";
+  font-weight: normal;
+  font-size: 30pt;
+  text-transform: uppercase;
+  //  margin-top: 50px;
+  padding-left: 5px;
+  line-height: 37pt;
+  color: @mainBlue;
+  width: 95%;
+}
+
+h4 {
+  font-family: "UniversLTW01-57Condense 723821";
+  font-weight: normal;
+  font-size: 14pt;
+  //  margin-top: 50px;
+  padding-left: 5px;
+  //  line-height: 37pt;
+  color: white;
+  margin-top: 0px;
+  width: 95%;
+}
+
+#findout {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+#bottomSectionHeader {
+  font-family: "UniversLTW01-67BoldCn";
+  font-weight: normal;
+  font-size: 30pt;
+  margin-top: 25px;
+  text-transform: uppercase;
+  //  margin-top: 50px;
+  padding-left: 3%;
+  line-height: 37pt;
+  color: white;
+  width: 95%;
+}
+
+#bottomSectionSubheader {
+  font-family: "UniversLTW01-67BoldCn";
+  font-weight: normal;
+  font-size: 16pt;
+  text-transform: uppercase;
+  margin-top: -25px;
+  padding-left: 3%;
+  line-height: 37pt;
+  color: @mainBlue;
+  width: 95%;
+}
+
+#socialIcons {
+  position: relative;
+  right: 0px;
+}
+
+.offsetRow{
+  margin-top:15px;
+}
+
+.downloadText {
+  font-family: "UniversLTW01-57Condense 723821";
+  line-height: 19px;
+  font-size: 17px;
+  margin-left: 44px;
+  padding-top: 20px;
+
+}
+
+.hr {
+  background-color: @mainBlue;
+  width: 88%;
+  margin-left: 47px;
+  margin-top: 16px;
+  height: 1px;
+
+}
+
+td p {
+  font-size: 14pt;
+}
+.vr {
+  background-color: @mainBlue;
+  width: 1px;
+
+  height: 100%;
+  min-height: 160px;
+}
+
+.topHR {
+  //    margin-top:5px;
+  margin-left: 5px;
+
+  width: 95%
+}
+
+.middleHR{
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 96%
+
+}
+
+.lowerHR{
+  margin-left: 45px;
+  margin-top: 0px;
+  width: 90%
+
+}
+#navHR {
+  margin-left: 20px;
+  width: 97%;
+
+
+}
+
+.formTable {
+  width: 468px;
+  margin-left: 47px;
+  height: 315px;
+
+
+}
+
+.solutionsList {
+  margin-left: -10px;
+  font-family: "UniversLTW01-57Condense 723821";
+  list-style: none;
+  color: white;
+  li {
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+}
+
+.rightArrow {
+  margin-left: 10px;
+}
+
+.bottomRow {
+
+  padding-bottom: 0px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width : 600px) {
+.bottomRow {
+    height: 310px;
+    margin-bottom: -40px;
+
+  }
+}
+@media only screen and (min-width : 600px) {
+  .fixed-footer-left {
+   float: left;
+  }
+.fixed-footer-right {
+  float: right;
+}
+}
+
+
+
+
+.navbar-fixed-bottom
+{
+  box-shadow: 0px 0px 5px black;
+  -webkit-box-shadow: 0px 0px 5px black;
+  background-color: white;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:70px;
+  -webkit-transition: height .25s ease-out;
+  -moz-transition: height .25s ease-out;
+  -o-transition: height .25s ease-out;
+  transition: height .25s ease-out;
+}
+
+.navbar-fixed-bottom.on {
+  height: 150px;
+}
+
+.navbar-default .navbar-nav li .navLink {
+
+  color: white !important;
+  background: none !important;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+
+}
+
+// Scroll spy adds the active class
+.navbar-default .navbar-nav li.active .navLink { 
+ color: #00a0df!important;
+}
+
+
+
+.navbar-default .navbar-nav li .navLink.active {
+  color: @mainBlue !important;
+}
+.vr {
+  position: absolute;
+  top: 0;
+  right: 10px;  
+}
+
+.rightArrow {
+  margin-left: 8px;
+  margin-top: 2px;
+  vertical-align: top;
+  }
+
+

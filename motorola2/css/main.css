@@ -1,0 +1,630 @@
+/***** General *****/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.orangeText {
+    color: #ff7900
+}
+html {
+    background: url(../images/bg_dot.gif);
+}
+body {
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: "UniversLTW01-57Condense 723821";
+    font-size: x-large;
+    min-width: 980px;
+}
+header, section, footer, aside, nav, article, figure {
+    display: block;
+}
+:focus {
+    outline: 0;
+}
+:active {
+    outline:0;
+}
+h1 {
+    font-family: "UniversLTW01-67BoldCn";
+    font-weight: normal;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    /*padding-top: 20px;*/
+    line-height: 0.9em;
+}
+h2 {
+    font-family: "UniversLTW01-67BoldCn";
+    font-weight: normal;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #00A0DF;
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+}
+img {
+    border: 0;
+}
+div#wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+iframe {
+    border: 0;
+    display: block;
+}
+section {
+    color: #FFF;
+    padding: 0 20px 20px 20px;
+    background-color: #000;
+    margin-bottom: 20px;
+}
+div.clear {
+    clear: both;
+    height: 0px;
+}
+
+/***** Navigation *****/
+
+nav ul li a {
+    display: block;
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: "UniversLTW01-67BoldCn";
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav a#menu {
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+nav#mobile {
+    display: none;
+}
+nav#desktop {
+    width: 50px;
+    height: 325px;
+    float: left;
+    margin: 0 0 0 -50px;
+    position: relative;
+}
+nav#desktop a#menu {
+    width: 33px;
+    height: 90px;
+    background-color: rgb(255, 121, 0);
+    background-color: rgba(255, 121, 0, 0.7);
+    margin: 225px 0 0 0;
+    padding: 12px 0 0 17px;
+}
+nav#desktop a#menu div {
+    color: #d8d7d7;
+    font-size: 0.5em;
+    font-family: "UniversLTW01-57Condense 723821";
+    margin: -33px 0 0 -17px;
+    text-transform: uppercase;
+    background-color: #939393;
+    padding: 3px 0;
+    text-align: center;
+    width: 50px;
+}
+nav#desktop a#menu div#open {
+    display: none;
+}
+nav#desktop a#menu div#open.show {
+    display: block;
+}
+nav#desktop a#menu div#close {
+    display: none;
+}
+nav#desktop a#menu div#close.show {
+    display: block;
+}
+nav#desktop a#menu.dots1 {
+    background-image: url(../images/nav-dots1.png);
+}
+nav#desktop a#menu.dots2 {
+    background-image: url(../images/nav-dots2.png);
+}
+nav#desktop a#menu.dots3 {
+    background-image: url(../images/nav-dots3.png);
+}
+nav#desktop ul {
+    position: absolute;
+    top: 225px;
+    left: 50px;
+    background-color: rgb(255, 121, 0);
+    background-color: rgba(255, 121, 0, 0.7);
+    width: 230px;
+    z-index: 3;
+}
+nav#desktop ul li a {
+    height: 27px;
+    padding: 7px 0 0 10px;
+}
+nav#desktop ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/***** Header *****/
+
+header {
+    background-color: #000;
+    padding: 20px;
+}
+header strong {
+    font-family: "UniversLTW01-67BoldCn";
+    font-weight: normal;
+    display: block;
+    text-align: right;
+    font-size: 0.7em;
+    color: #FFF;
+}
+header a {
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 164px;
+    height: 31px;
+    display: block;
+    background-image: url(../images/motorola_logo_white.gif);
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+td p {
+    font-size: 14pt;
+}
+
+#topSection h1 {
+    border-top: solid 1px #ff7900;
+    /*padding-top: 25px;*/
+    /*margin-top: -50px;*/
+
+}
+
+/***** Video *****/
+
+section#videoSection h1 {
+    color: #cbcbcb;
+    font-size: 1.6em;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #666666;
+
+
+}
+
+section#solutionsSection h1 {
+    color: #cbcbcb;
+    font-size: 1.6em;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #666666;
+
+
+}
+
+
+section#videoSection {
+    height: 275px;
+}
+
+section#videoSection p {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    font-family: "UniversLTW01-57Condense 723821";
+}
+section#videoSection p span {
+    display: block;
+}
+section#videoSection div#mobile {
+    display: none;
+}
+section#videoSection div#desktop {
+    position: relative;
+}
+section#videoSection div#desktop a#videoPlayer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    margin: -48px 0 0 -48px;
+    width: 96px;
+    height: 96px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+section#videoSection div#desktop a#videoPlayer:hover {
+    -webkit-box-shadow: 0 0 80px #fff;
+    -moz-box-shadow: 0 0 80px #fff;
+    box-shadow: 0 0 80px #fff
+}
+section#videoSection div#desktop a#videoPlayer span {
+    display: block;
+    width: 96px;
+    height: 96px;
+    background-image: url(../images/icon_video_arrow.gif);
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+section#videoSection div#desktop a img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+/***** Tour *****/
+
+section#tourSection {
+    position: relative;
+
+}
+section#tourSection a#download {
+    display: block;
+    padding: 10px 15px 10px 40px;
+    background-color: #FFF;
+    background-image: url(../images/icon_download.gif);
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    float: right;
+    font-size: 0.7em;
+    font-family: "UniversLTW01-57Condense 723821";
+    color: #00A0DF;
+    text-decoration: none;
+    margin-top: -85px;
+}
+
+section#tourSection h1 {
+    color: #cbcbcb;
+    font-size: 1.6em;
+    padding-bottom: 20px;
+    padding-top: -10px;
+    border-bottom: solid 1px #666666;
+    display: inline-block;
+    width: 500px;
+    margin-top: -350px;
+
+}
+.mainOrange {
+    /*display: block;*/
+}
+
+.space {
+    /*margin: 5px;*/
+    /*display: block;*/
+    /*word-spacing: 5px;*/
+    margin: 0 50px 0 10px;
+}
+#orangeBlock {
+    font-family: "UniversLTW01-67BoldCn";
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left:  auto;
+    margin-right: auto;
+    margin-top: 0px;
+    color: white;
+
+}
+
+section#tourSection a#download:hover {
+    background-color: #CCC;
+    color: #FFF;
+}
+section#tourSection a#download span {
+    display: block;
+}
+section#tourSection div#desktop {
+    width: 1000px;
+    /*height: 650px;*/
+    overflow: hidden;
+}
+section#tourSection div#desktop object {
+    width: 100%;
+    height: 100%;
+}
+section#tourSection div#mobile,
+section#tourSection div#phone {
+    display: none;
+}
+
+/***** Solutions *****/
+
+
+section#solutionsSection  {
+    margin-bottom: 20px;
+    height: 400px;
+}
+
+section#solutionsSection h1 {
+    margin-bottom: 20px;
+
+}
+section#solutionsSection div.column {
+    float: left;
+    padding: 0 23px;
+    border-right: solid 1px #00A0DF;
+}
+/*section#solutionsSection div.last {*/
+    /*padding: 0 0 0 23px;*/
+    /*border-right: 0;*/
+/*}*/
+section#solutionsSection div.column ul li {
+    margin-bottom: 10px;
+}
+section#solutionsSection div.column ul li a {
+    display: block;
+    font-size: 0.6em;
+    font-family: "UniversLTW01-57Condense 723821";
+    padding-right: 25px;
+    color: #FFF;
+    text-decoration: none;
+    background-image: url(../images/icon_arrow_black.gif);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+section#solutionsSection div.column ul li a:hover {
+    color: #00A0DF;
+}
+
+/***** Footer *****/
+
+.mobileFooter {
+    display: none;
+}
+footer {
+    background-color: #FFF;
+    font-family: "UniversLTW01-57Condense 723821";
+    font-size: 0.7em;
+}
+/* Contact */
+footer div#contact {
+    width: 100%;
+    background-color: #FFF;
+    -webkit-box-shadow: 0 -2px 2px #666;
+    -moz-box-shadow: 0 -2px 2px #666;
+    box-shadow: 0 -2px 2px #666;
+}
+footer div#contact div#group {
+    width: 440px;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+footer div#contact div#group a {
+    display: block;
+    float: left;
+    background-position: 0px 3px;
+    background-repeat: no-repeat;
+    margin: 0 10px 0 0;
+    text-decoration: none;
+    color: #333;
+    padding: 0 0 5px 0;
+}
+footer div#contact div#group a span {
+    display: block;
+}
+footer div#contact div#group a strong {
+    font-weight: normal;
+    font-family: "UniversLTW01-67BoldCn";
+    color: #ff7900;
+}
+footer div#contact div#group a#clickToChat {
+    background-image: url(../images/icon_click-to-chat.gif);
+    padding: 0 20px 5px 50px;
+    border-right: solid 1px #ff7900;
+}
+footer div#contact div#group a#contactMe {
+    background-image: url(../images/icon_phone.gif);
+    padding-left: 30px;
+}
+footer div#contact div#group a#clickToCall {
+    background-image: url(../images/icon_phone.gif);
+    padding: 0 15px 5px 30px;
+    border-right: solid 1px #00A0DF;
+    display: none;
+}
+/* Terms */
+footer div#terms {
+    font-size: 0.8em;
+
+}
+
+#orangeRowBG {
+    background-color: #ff7900;
+}
+
+footer div#terms a#logo {
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 164px;
+    height: 31px;
+    display: block;
+    background-image: url(../images/motorola_logo_black.gif);
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    float: left;
+}
+footer div#terms p {
+    float: right;
+    padding-top: 5px;
+    border-top: solid 1px #ff7900;
+}
+footer div#terms p a {
+    text-decoration: none;
+    color: #ff7900;
+}
+
+.bottomBlock {
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px 10px 10px;
+
+}
+
+#radioPic {
+    /*margin-top: -300px;*/
+    /*width: 420px;*/
+    position: relative;
+    right: -520px;
+    top: -220px;
+}
+
+#topLogo {
+    padding-bottom: 20px;
+}
+
+#mainSubhead {
+    color: #ff7900;
+    padding-bottom: 40px;
+}
+#infographic {
+    /*margin-bottom:100px;*/
+    /*left: 70%;*/
+    bottom: 178px;
+    position: relative;
+
+}
+
+section#topSection {
+    height: 125px;
+}
+.contentBlock
+{
+    display: block;
+    width: 620px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+.orangeHR{
+}
+
+.contentBlock2
+{
+    display: block;
+    width: 460px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+/*.sectionh1{*/
+/*color: #cbcbcb;*/
+/*min-width: 500px;*/
+/*border-bottom: solid 1px #666666;*/
+/*}*/
+
+.smallText {
+    font-size: .7em;
+}
+
+.grayText {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#whitePaperGraphic {
+    /*padding: 20px;*/
+    padding-top: 60px;
+    padding-right: 20px;
+    /*float: left;*/
+}
+
+.whitePaperGraphicContainer {
+    float: left;
+}
+
+.formDiv {
+    /*float: right;*/
+    /*margin-top: -50px;*/
+}
+
+#inThisWhitepaper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.formTable {
+    width: 500px;
+    height: 315px;
+    /*display: inline-block;*/
+
+
+}
+
+#learnHowHeader {
+    padding-top: 0px;
+    margin-top: -20px;
+}
+
+#mainHeadline {
+    padding-top: 20px;
+}
+
+input, select {
+    width: 300px;
+}
+/***** HD Devices *****/
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.1),
+only screen and (min--moz-device-pixel-ratio: 1.1),
+only screen and (-ms-min-device-pixel-ratio: 1.1),
+only screen and (-o-min-device-pixel-ratio: 2/1.9),
+only screen and (min-device-pixel-ratio: 1.1),
+only screen and (min-resolution: 101dpi),
+only screen and (min-resolution: 1.1dppx) {
+    nav#desktop a#menu.dots1 {
+        background-image: url(../images/nav_dots1@2x.gif);
+        background-size: 17px 77px;
+    }
+    nav#desktop a#menu.dots2 {
+        background-image: url(../images/nav_dots2@2x.gif);
+        background-size: 17px 77px;
+    }
+    nav#desktop a#menu.dots3 {
+        background-image: url(../images/nav_dots3@2x.gif);
+        background-size: 17px 77px;
+    }
+    header a {
+        background-image: url(../images/motorola_logo_white@2x.gif);
+        background-size: 164px 31px;
+    }
+    section#videoSection div#desktop a#videoPlayer span {
+        background-image: url(../images/icon_video_arrow@2x.gif);
+        background-size: 96px 96px;
+    }
+    section#tourSection a#download {
+        background-image: url(../images/icon_download@2x.gif);
+        background-size: 20px 36px;
+    }
+    section#solutionsSection div.column ul li a {
+        background-image: url(../images/icon_arrow_black@2x.gif);
+        background-size: 12px 11px;
+    }
+    footer div#contact div#group a#clickToChat {
+        background-image: url(../images/icon_click-to-chat@2x.gif);
+        background-size: 41px 38px;
+    }
+    footer div#contact div#group a#contactMe {
+        background-image: url(../images/icon_phone@2x.gif);
+        background-size: 22px 36px;
+    }
+    footer div#contact div#group a#clickToCall {
+        background-image: url(../images/icon_phone@2x.gif);
+        background-size: 22px 36px;
+    }
+    footer div#terms a#logo {
+        background-image: url(../images/motorola_logo_black@2x.gif);
+        background-size: 164px 31px;
+    }
+}
