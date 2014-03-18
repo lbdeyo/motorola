@@ -143,16 +143,12 @@ ul {
 }
 #infographicButton {
   padding-top: 3px;
-  /*padding-left: 20%;*/
-  /*margin-left: 5px;*/
   text-transform: uppercase;
     text-decoration: none;
   color: white;
-  /*font-family: "UniversLTW01-67BoldCn";*/
   font-size: 22px;
   width: 450px;
   height: 41px;
-  /*background-image: url('../img/motorola1_thankyou_buttonbg.png');*/
   margin-bottom: 15px;
 }
 
