@@ -177,6 +177,20 @@ header a {
     float: left;
 }
 
+#checkbox {
+    width: 50px;
+}
+
+input[type=checkbox], input[type=radio] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+}
+
+label {
+    font-size: .75em;
+}
+
 td p {
     font-size: 14pt;
 }
@@ -293,6 +307,11 @@ section#tourSection h1 {
 
 }
 
+#orangeBlock a {
+    color: white;
+    text-decoration: none;
+}
+
 section#tourSection a#download:hover {
     background-color: #CCC;
     color: #FFF;
@@ -372,7 +391,7 @@ footer div#contact {
     box-shadow: 0 -2px 2px #666;
 }
 footer div#contact div#group {
-    width: 440px;
+    width: 550px;
     padding: 10px 0;
     margin: 0 auto;
 }
