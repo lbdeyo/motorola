@@ -29,7 +29,7 @@ header, section, footer, aside, nav, article, figure {
 h1 {
     font-family: "UniversLTW01-67BoldCn";
     font-weight: normal;
-    font-size: 1.9em;
+    font-size: 1.7em;
     text-transform: uppercase;
     /*padding-top: 20px;*/
     line-height: 0.9em;
@@ -91,7 +91,7 @@ nav#desktop {
     width: 50px;
     height: 325px;
     float: left;
-    margin: 0 0 0 -50px;
+    margin: 0 -50px;
     position: relative;
 }
 nav#desktop a#menu {
@@ -169,7 +169,7 @@ header a {
     text-indent: -9999px;
     overflow: hidden;
     width: 164px;
-    height: 31px;
+    /*height: 31px;*/
     display: block;
     background-image: url(../images/motorola_logo_white.gif);
     background-position: center 0px;
@@ -183,7 +183,7 @@ td p {
 
 #topSection h1 {
     border-top: solid 1px #ff7900;
-    /*padding-top: 25px;*/
+    padding-top: 25px;
     /*margin-top: -50px;*/
 
 }
@@ -193,7 +193,7 @@ td p {
 section#videoSection h1 {
     color: #cbcbcb;
     font-size: 1.6em;
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
     border-bottom: solid 1px #666666;
 
 
@@ -202,7 +202,7 @@ section#videoSection h1 {
 section#solutionsSection h1 {
     color: #cbcbcb;
     font-size: 1.6em;
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
     border-bottom: solid 1px #666666;
 
 
@@ -210,7 +210,8 @@ section#solutionsSection h1 {
 
 
 section#videoSection {
-    height: 275px;
+    height: 225px;
+    padding: 20px;
 }
 
 section#videoSection p {
@@ -227,33 +228,7 @@ section#videoSection div#mobile {
 section#videoSection div#desktop {
     position: relative;
 }
-section#videoSection div#desktop a#videoPlayer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    margin: -48px 0 0 -48px;
-    width: 96px;
-    height: 96px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-}
-section#videoSection div#desktop a#videoPlayer:hover {
-    -webkit-box-shadow: 0 0 80px #fff;
-    -moz-box-shadow: 0 0 80px #fff;
-    box-shadow: 0 0 80px #fff
-}
-section#videoSection div#desktop a#videoPlayer span {
-    display: block;
-    width: 96px;
-    height: 96px;
-    background-image: url(../images/icon_video_arrow.gif);
-    background-position: center 0px;
-    background-repeat: no-repeat;
-    text-indent: -9999px;
-    overflow: hidden;
-}
+
 section#videoSection div#desktop a img {
     width: 100%;
     height: auto;
@@ -265,6 +240,8 @@ section#videoSection div#desktop a img {
 
 section#tourSection {
     position: relative;
+    padding: 20px;
+    height: 520px;
 
 }
 section#tourSection a#download {
@@ -279,18 +256,18 @@ section#tourSection a#download {
     font-family: "UniversLTW01-57Condense 723821";
     color: #00A0DF;
     text-decoration: none;
-    margin-top: -85px;
+    /*margin-top: -85px;*/
 }
 
 section#tourSection h1 {
     color: #cbcbcb;
     font-size: 1.6em;
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
     padding-top: -10px;
     border-bottom: solid 1px #666666;
     display: inline-block;
     width: 500px;
-    margin-top: -350px;
+    /*margin-top: -350px;*/
 
 }
 .mainOrange {
@@ -308,7 +285,7 @@ section#tourSection h1 {
     text-align: center;
     font-size: 1.3em;
     padding-top: 5px;
-    padding-bottom: 5px;
+    /*padding-bottom: 5px;*/
     margin-left:  auto;
     margin-right: auto;
     margin-top: 0px;
@@ -342,7 +319,7 @@ section#tourSection div#phone {
 
 section#solutionsSection  {
     margin-bottom: 20px;
-    height: 400px;
+    height: 350px;
 }
 
 section#solutionsSection h1 {
@@ -420,7 +397,7 @@ footer div#contact div#group a strong {
 footer div#contact div#group a#clickToChat {
     background-image: url(../images/icon_click-to-chat.gif);
     padding: 0 20px 5px 50px;
-    border-right: solid 1px #ff7900;
+    border-right: solid 1px #cccccc;
 }
 footer div#contact div#group a#contactMe {
     background-image: url(../images/icon_phone.gif);
@@ -435,6 +412,8 @@ footer div#contact div#group a#clickToCall {
 /* Terms */
 footer div#terms {
     font-size: 0.8em;
+    border-top: solid 1px #cccccc;
+
 
 }
 
@@ -456,7 +435,6 @@ footer div#terms a#logo {
 footer div#terms p {
     float: right;
     padding-top: 5px;
-    border-top: solid 1px #ff7900;
 }
 footer div#terms p a {
     text-decoration: none;
@@ -479,31 +457,34 @@ footer div#terms p a {
 }
 
 #topLogo {
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
 }
 
 #mainSubhead {
     color: #ff7900;
-    padding-bottom: 40px;
+    /*padding-bottom: 40px;*/
 }
 #infographic {
     /*margin-bottom:100px;*/
     /*left: 70%;*/
-    bottom: 178px;
+    /*bottom: 120px;*/
     position: relative;
+    display: inline-block;
+    float: right;
 
 }
 
 section#topSection {
-    height: 125px;
+    /*height: 125px;*/
+    padding-bottom: 25px;
 }
 .contentBlock
 {
-    display: block;
-    width: 620px;
-    position: relative;
-    left: 20px;
-    top: 20px;
+    display: inline-block;
+    width: 500px;
+    /*position: relative;*/
+    /*left: 20px;*/
+    /*top: 20px;*/
 }
 
 .orangeHR{
@@ -526,6 +507,7 @@ section#topSection {
 
 .smallText {
     font-size: .7em;
+    padding-top: 15px;
 }
 
 .grayText {
@@ -535,39 +517,63 @@ section#topSection {
 
 #whitePaperGraphic {
     /*padding: 20px;*/
-    padding-top: 60px;
+    /*padding-top: 60px;*/
     padding-right: 20px;
     /*float: left;*/
 }
 
 .whitePaperGraphicContainer {
     float: left;
+    display: inline-block;
 }
 
 .formDiv {
-    /*float: right;*/
+    float: right;
+    display: inline-block;
+    width: 500px;
     /*margin-top: -50px;*/
 }
 
 #inThisWhitepaper {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    /*padding-bottom: 10px;*/
 }
+
+#whitepaperButton {
+    padding-top: 10px;
+}
+
 .formTable {
-    width: 500px;
-    height: 315px;
+    width: 630px;
+    padding-top: 20px;
+    /*height: 315px;*/
     /*display: inline-block;*/
 
 
 }
 
+.sub {
+    color: #888888;
+    text-transform: uppercase;
+    font-size: 18pt;
+}
+
+.sectionHeader {
+    font-family: "UniversLTW01-67BoldCn";
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
 #learnHowHeader {
-    padding-top: 0px;
-    margin-top: -20px;
+    /*padding-top: 0px;*/
+    /*margin-top: -20px;*/
+    padding-bottom: 20px;
 }
 
 #mainHeadline {
-    padding-top: 20px;
+    /*padding-top: 20px;*/
 }
 
 input, select {

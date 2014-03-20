@@ -15,7 +15,7 @@ body {
     /*font-family: Arial, Helvetica, sans-serif;*/
     font-family: "UniversLTW01-57Condense 723821";
     font-size: x-large;
-    min-width: 980px;
+    /*min-width: 980px;*/
 }
 header, section, footer, aside, nav, article, figure {
     display: block;
@@ -29,9 +29,9 @@ header, section, footer, aside, nav, article, figure {
 h1 {
     font-family: "UniversLTW01-67BoldCn";
     font-weight: normal;
-    font-size: 1.9em;
+    font-size: 1.7em;
     text-transform: uppercase;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
     line-height: 0.9em;
 }
 h2 {
@@ -48,10 +48,15 @@ ul {
 img {
     border: 0;
 }
-div#wrapper {
-    width: 980px;
-    margin: 0 auto;
+/*div#wrapper {*/
+    /*width: 980px;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+.container {
+    max-width: 980px;
 }
+
 iframe {
     border: 0;
     display: block;
@@ -183,7 +188,8 @@ td p {
 
 #topSection h1 {
     border-top: solid 1px #ff7900;
-    padding-top: 25px;
+    /*padding-top: 25px;*/
+    /*margin-top: -50px;*/
 
 }
 
@@ -292,6 +298,29 @@ section#tourSection h1 {
     margin-top: -350px;
 
 }
+.mainOrange {
+    /*display: block;*/
+}
+
+.space {
+    /*margin: 5px;*/
+    /*display: block;*/
+    /*word-spacing: 5px;*/
+    margin: 0 50px 0 10px;
+}
+#orangeBlock {
+    font-family: "UniversLTW01-67BoldCn";
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left:  auto;
+    margin-right: auto;
+    margin-top: 0px;
+    color: white;
+
+}
+
 section#tourSection a#download:hover {
     background-color: #CCC;
     color: #FFF;
@@ -300,7 +329,7 @@ section#tourSection a#download span {
     display: block;
 }
 section#tourSection div#desktop {
-    width: 1000px;
+    /*width: 1000px;*/
     /*height: 650px;*/
     overflow: hidden;
 }
@@ -354,6 +383,9 @@ section#solutionsSection div.column ul li a:hover {
 
 /***** Footer *****/
 
+.mobileFooter {
+    display: none;
+}
 footer {
     background-color: #FFF;
     font-family: "UniversLTW01-57Condense 723821";
@@ -368,7 +400,7 @@ footer div#contact {
     box-shadow: 0 -2px 2px #666;
 }
 footer div#contact div#group {
-    width: 440px;
+    /*width: 440px;*/
     padding: 10px 0;
     margin: 0 auto;
 }
@@ -407,12 +439,14 @@ footer div#contact div#group a#clickToCall {
 }
 /* Terms */
 footer div#terms {
-    width: 960px;
-    margin: 0 auto;
-    padding: 10px 10px 10px;
     font-size: 0.8em;
-    border-top: solid 1px #ff7900;
+
 }
+
+#orangeRowBG {
+    background-color: #ff7900;
+}
+
 footer div#terms a#logo {
     text-indent: -9999px;
     overflow: hidden;
@@ -427,10 +461,18 @@ footer div#terms a#logo {
 footer div#terms p {
     float: right;
     padding-top: 5px;
+    border-top: solid 1px #ff7900;
 }
 footer div#terms p a {
     text-decoration: none;
     color: #ff7900;
+}
+
+.bottomBlock {
+    /*width: 960px;*/
+    margin: 0 auto;
+    padding: 10px 10px 10px;
+
 }
 
 #radioPic {
@@ -458,12 +500,12 @@ footer div#terms p a {
 }
 
 section#topSection {
-    height: 125px;
+    height: 100px;
 }
 .contentBlock
 {
     display: block;
-    width: 620px;
+    /*width: 620px;*/
     position: relative;
     left: 20px;
     top: 20px;
@@ -475,7 +517,7 @@ section#topSection {
 .contentBlock2
 {
     display: block;
-    width: 460px;
+    /*width: 460px;*/
     position: relative;
     left: 20px;
     top: 20px;
@@ -500,6 +542,16 @@ section#topSection {
     /*padding: 20px;*/
     padding-top: 60px;
     padding-right: 20px;
+    /*float: left;*/
+}
+
+.whitePaperGraphicContainer {
+    float: left;
+}
+
+.formDiv {
+    /*float: right;*/
+    /*margin-top: -50px;*/
 }
 
 #inThisWhitepaper {
@@ -513,8 +565,18 @@ section#topSection {
 
 
 }
+
+#learnHowHeader {
+    padding-top: 0px;
+    margin-top: -20px;
+}
+
+#mainHeadline {
+    padding-top: 20px;
+}
+
 input, select {
-    width: 300px;
+    /*width: 300px;*/
 }
 /***** HD Devices *****/
 

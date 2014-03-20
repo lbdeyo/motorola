@@ -20,7 +20,7 @@ $(function() {
 		};
 		if ($(window).scrollTop() == $(document).height() - $(window).height()){
 			$("nav#desktop").stop().animate({
-    			marginTop: 1300
+    			marginTop: 1100
 			});
 			$("nav#desktop a#menu").attr("class", "dots3");
   		}
@@ -62,7 +62,7 @@ $("nav ul li.tour a").click(function() {
     $("html, body").animate({scrollTop: $("#tourSection").offset().top}, 500);
 });
 $("nav ul li.solutions a").click(function() {
-    $("html, body").animate({scrollTop: $("#solutionsSection").offset().top}, 500);
+    $("html, body").animate({scrollTop: $("#solutionsSection").offset().top }, 500);
 });
 
 /* Docking Footer */
