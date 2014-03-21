@@ -211,43 +211,31 @@ section#videoSection div#desktop a#videoPlayer {
     width: 96px;
     z-index: 2;
 }
-section#videoSection div#desktop a#videoPlayer:hover {
-    box-shadow: 0 0 80px #FFFFFF;
-}
-section#videoSection div#desktop a#videoPlayer span {
-    background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{0acaec70-ddff-4c90-a783-3d8262ead48e}_1566icon_video_arrow.gif");
-    background-position: center 0;
-    background-repeat: no-repeat;
-    display: block;
-    height: 96px;
-    overflow: hidden;
-    text-indent: -9999px;
-    width: 96px;
-}
-section#videoSection div#desktop a img {
-    height: auto;
-    position: relative;
-    z-index: 1;
-}
+
+/*section#videoSection div#desktop a img {*/
+    /*height: auto;*/
+    /*position: relative;*/
+    /*z-index: 1;*/
+/*}*/
 section#tourSection {
     position: relative;
     padding: 20px;
     /*height: 520px;*/
 }
-section#tourSection a#download {
-    background-color: #FFFFFF;
-    background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{3220a3bc-5c02-47f9-8796-d1faac5450f3}_1566icon_download.gif");
-    background-position: 10px 12px;
-    background-repeat: no-repeat;
-    color: #00A0DF;
-    display: block;
-    float: right;
-    font-family: "UniversLTW01-57Condense 723821";
-    font-size: 0.7em;
+/*section#tourSection a#download {*/
+    /*background-color: #FFFFFF;*/
+    /*background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{3220a3bc-5c02-47f9-8796-d1faac5450f3}_1566icon_download.gif");*/
+    /*background-position: 10px 12px;*/
+    /*background-repeat: no-repeat;*/
+    /*color: #00A0DF;*/
+    /*display: block;*/
+    /*float: right;*/
+    /*font-family: "UniversLTW01-57Condense 723821";*/
+    /*font-size: 0.7em;*/
     /*margin-top: -85px;*/
-    padding: 10px 15px 10px 40px;
-    text-decoration: none;
-}
+    /*padding: 10px 15px 10px 40px;*/
+    /*text-decoration: none;*/
+/*}*/
 section#tourSection h1 {
     border-bottom: 1px solid #666666;
     color: #CBCBCB;
@@ -257,8 +245,7 @@ section#tourSection h1 {
     padding-bottom: 20px;
     width: 500px;
 }
-.mainOrange {
-}
+
 .space {
     margin: 0 50px 0 10px;
 }

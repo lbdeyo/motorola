@@ -5,6 +5,28 @@ body {
     min-width: inherit;
     -webkit-text-size-adjust: none;
 }
+
+#clickToChat {
+    display: none;
+}
+
+#speakToRep {
+    display: none;
+}
+
+.chatCallout {
+    display:none;
+}
+
+#liveChat {
+    display: none;
+}
+
+#liveChatLink {
+    display: none;
+    position: absolute;
+    left: 3000px;
+}
 /* Tour */
 section#tourSection div#desktop {
     display: none;
@@ -38,11 +60,12 @@ section#tourSection div#mobile a {
 
 
 section#videoSection div#desktop {
-    display: none;
+    /*display: none;*/
 }
 
 section#videoSection div#mobile {
-    display: block;
+    /*display: block;*/
+    display:none;
 }
 
 
@@ -54,7 +77,8 @@ footer div#contact div#group a#clickToChat {
     display: none;
 }
 footer div#contact div#group a#clickToCall {
-    display: block;
+    display: none;
+
     margin-left: 5px;
 }
 
@@ -73,7 +97,8 @@ footer div#contact div#group a#clickToCall {
     }
     #learnHowHeader {
         position: relative;
-        width: 900px;
+        padding-top: 25px;
+        width: 90%;
     }
     section#videoSection {
         height: 368px;
@@ -123,15 +148,17 @@ footer div#contact div#group a#clickToCall {
 
     footer div#orangeBlock {
         width: 85%;
-        font-size: 0.6em;
+        font-size: 1em;
     }
 
     footer div#orangeBlock p {
         float: none;
-        padding: 0 10px;
+        padding: 0;
         text-align: center;
         font-size: 0.6em;
     }
+
+
     #radioPic {
 
         position: relative;
@@ -145,7 +172,7 @@ footer div#contact div#group a#clickToCall {
 
 
         position: relative;
-        bottom: 100px;
+        bottom: 130px;
         /*display: none;*/
         display: inline-block;
         float: right;
@@ -159,10 +186,14 @@ footer div#contact div#group a#clickToCall {
         width: 40%;
         position: relative;
         padding-right: 0px;
+        padding-top: 25px;
+
         margin-right: 0px;
         left: 20px;
-        top: 0px;
+        top: 20px;
     }
+
+
 
 }
 
@@ -272,8 +303,8 @@ footer div#contact div#group a#clickToCall {
 
     /*Video*/
     section#videoSection {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 50px;
+        /*padding-bottom: 100px;*/
     }
     section#videoSection h1 {
         border-top: 0;
@@ -281,7 +312,13 @@ footer div#contact div#group a#clickToCall {
     /*Tour*/
     section#tourSection {
         padding-bottom: 70px;
+        margin-top: -50px;
     }
+
+    section#solutionsSection {
+        height: 500px;
+    }
+
     section#tourSection a#download {
         position: absolute;
         bottom: 10px;
@@ -335,7 +372,7 @@ footer div#contact div#group a#clickToCall {
     }
     footer div#contact div#group a#clickToCall,
     footer div#contact div#group a#contactMe {
-        background-size: 10px 17px;
+        /*background-size: 10px 17px;*/
     }
     footer div#contact div#group a#clickToCall {
         padding: 0 5px 5px 15px;
@@ -343,11 +380,51 @@ footer div#contact div#group a#clickToCall {
     footer div#contact div#group a#contactMe {
         padding: 0 0 5px 15px;
         margin-right: 0;
+
     }
     footer div#terms {
         width: 100%;
         margin: 0;
         padding: 10px 0;
+    }
+
+    #infographic {
+
+
+        position: relative;
+        bottom: 170px;
+        right: 50px;
+        /*display: none;*/
+        display: inline-block;
+        float: right;
+        /*top: -100px;*/
+        /*margin-bottom: -250px;*/
+
+    }
+
+    /*.contentBlock*/
+    /*{*/
+        /*display: inline;*/
+        /*width: 300px;*/
+        /*position: relative;*/
+        /*float: left;*/
+        /*left: 20px;*/
+        /*top: 20px;*/
+    /*}*/
+    .contentBlock2 {
+        width: 95%;
+    }
+
+    #radioPic {
+
+        position: relative;
+        left: 5px;
+        /*top: -400px;*/
+        /*float: left;*/
+        width: 35%;
+        padding-bottom: 50px;
+        /*margin-bottom: 50px;*/
+        /*display: none;*/
     }
 }
 
@@ -355,8 +432,43 @@ footer div#contact div#group a#clickToCall {
 
 @media only screen and (max-width : 640px) {
     /*Video*/
+
+    section#topSection h1 {
+        font-size: 1.9em;
+    }
+
+    section#videoSection {
+        padding: 0px;
+        height: 700px;
+        padding-top: 50px;
+    }
     section#videoSection p span {
         display: inline;
+    }
+
+    section#videoSection h1 {
+        width: 500px;
+    }
+
+    .contentBlock
+    {
+        display: block;
+        width: 85%;
+        position: relative;
+        float: left;
+        left: 20px;
+        top: 20px;
+    }
+
+
+
+    .contentBlock2
+    {
+        display: block;
+        width: 90%;
+        /*position: relative;*/
+        /*left: 20px;*/
+        /*top: 20px;*/
     }
 
     section#videoSection div#mobile {
@@ -422,7 +534,15 @@ footer div#contact div#group a#clickToCall {
         background-repeat: no-repeat;
         cursor: pointer;
     }
+
+    .formTable {
+        width: 350px;
+    }
     /*Solutions*/
+
+    section#solutionsSection {
+        height: 350px;
+    }
     section#solutionsSection div.column {
         margin: 0 10px 0 0;
         width: 99%;
@@ -433,17 +553,35 @@ footer div#contact div#group a#clickToCall {
         width: 300px;
 
     }
+
+    #infographic {
+
+
+        position: static;
+        padding-top: 25px;
+        float: none;
+        padding-left: 20px;
+        /*width: 70%;*/
+        /*bottom: 170px;*/
+        /*right: 10px;*/
+        /*display: none;*/
+        display: block;
+        /*float: right;*/
+        /*top: -100px;*/
+        /*margin-bottom: -250px;*/
+
+    }
 }
 
 
 @media only screen and (max-width : 500px) {
     /*Video*/
     section#videoSection h1 span {
-        display: block;
+        /*display: block;*/
     }
     /*Tour*/
     section#tourSection h1 span {
-        display: block;
+        /*display: block;*/
     }
     section#tourSection a#download span {
         display: block;
@@ -464,7 +602,7 @@ footer div#contact div#group a#clickToCall {
     }
     footer div#contact div#group a#clickToCall,
     footer div#contact div#group a#contactMe {
-        display:none;
+        /*display:none;*/
         background-size: 10px 17px;
         border: 0;
         padding: 0 0 2px 15px;
@@ -493,27 +631,7 @@ footer div#contact div#group a#clickToCall {
     section#topSection {
         /*height: 125px;*/
     }
-    .contentBlock
-    {
-        display: inline;
-        width: 300px;
-        position: relative;
-        float: left;
-        left: 20px;
-        top: 20px;
-    }
 
-    .orangeHR{
-    }
-
-    .contentBlock2
-    {
-        display: block;
-        width: 320px;
-        /*position: relative;*/
-        /*left: 20px;*/
-        /*top: 20px;*/
-    }
 
 
     .smallText {
@@ -523,7 +641,7 @@ footer div#contact div#group a#clickToCall {
     .grayText {
         margin-top: 20px;
         margin-bottom: 20px;
-        width: 45%;
+        width: 95%;
     }
 
     #whitePaperGraphic {
@@ -538,15 +656,15 @@ footer div#contact div#group a#clickToCall {
         padding-bottom: 10px;
 
     }
-    .formTable {
-        width: 200px;
+    /*.formTable {*/
+        /*width: 200px;*/
         /*height: 315px;*/
         /*display: inline-block;*/
 
 
-    }
+    /*}*/
     input, select {
-        width: 75px;
+        width: 180px;
     }
 
 
@@ -561,7 +679,7 @@ footer div#contact div#group a#clickToCall {
         padding-top: -10px;
         border: none;
         display: inline-block;
-        width: 500px;
+        width: 90%;
         margin-top: -350px;
 
     }
