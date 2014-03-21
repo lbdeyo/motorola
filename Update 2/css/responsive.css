@@ -1,0 +1,383 @@
+/***** All Mobile *****/
+
+/* General */
+body {
+	min-width: inherit;
+	-webkit-text-size-adjust: none;
+}
+/* Tour */
+section#tourSection div#desktop {
+	display: none;
+}
+section#tourSection div#mobile {
+	display: block;
+	background-image: url(../images/video_tour.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50px;
+	padding: 520px 10px 40px 10px;
+}
+section#tourSection div#mobile a {
+	display: block;
+	float: left;
+	width: 29%;
+	margin: 0 12px 0 0;
+	color: #FFF;
+	text-decoration: none;
+	font-family: "UniversLTW01-57Condense 723821";
+	font-weight: normal;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	padding: 5px 20px 5px 5px;
+	background-color: #00A0DF;
+	background-image: url(../images/icon_arrow_blue.gif);
+	background-position: 96% center;
+	background-repeat: no-repeat;
+}
+/*Footer*/
+footer div#contact div#group {
+	width: 470px;
+}
+footer div#contact div#group a#clickToChat {
+	display: none;
+}
+footer div#contact div#group a#clickToCall {
+	display: block;
+}
+
+/***** Tablet Landscape *****/
+
+@media only screen and (max-width : 1070px) {
+/* General */
+div#wrapper {
+	width: 85%;
+}
+/*Tour*/
+section#tourSection a#download {
+	font-size: 0.5em;
+}
+section#tourSection div#mobile a {
+	width: 28%;
+	font-size: 0.75em;
+}
+/*Solutions*/
+section#solutionsSection div.column {
+	border-right: 0;
+	margin: 0 50px 0 0;
+	padding: 0;
+	width: 40%;
+}
+section#solutionsSection div.column ul li {
+	border-bottom: solid 1px #333;
+	padding-bottom: 10px;
+}
+/* Footer */
+footer div#terms {
+	width: 85%;
+}
+footer div#terms a#logo {
+	display: none;
+}
+footer div#terms p {
+	float: none;
+	padding: 0 10px;
+	text-align: center;
+}
+}
+
+/***** Tablet Portrait and Phone *****/
+
+@media only screen and (max-width : 900px) {
+/*General*/
+body {
+	font-size: large;
+}
+div#wrapper {
+	width: 100%;
+	position: relative;
+}
+section {
+	padding: 0 10px 10px 10px;
+	margin-bottom: 0;
+}
+/*Navigation*/
+nav#desktop {
+	display: none;
+}
+nav#mobile {
+	display: inherit;
+	width: 25px;
+	height: 18px;
+	position: fixed;
+	z-index: 4;
+	top: 15px;
+	right: 25px;
+}
+nav#mobile div#cover {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 50px;
+	left: 0px;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 4;
+}
+nav#mobile div#cover.show {
+	display: inherit;
+}
+nav#mobile a#menu {
+	width: 25px;
+	height: 18px;
+	background-image: url(../images/nav_mobile.gif);
+	position: relative;
+	z-index: 5;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+nav#mobile a#menu.close {
+	background-image: url(../images/nav_mobile_close.gif);
+}
+nav#mobile ul {
+	position: fixed;
+	top: 50px;
+	left: 0px;
+	background-color: #00A0DF;
+	width: 100%;
+	z-index: 4;
+	display: none;
+}
+nav#mobile ul li a {
+	padding: 10px;
+	border-bottom: solid 1px #61ccf6;
+}
+nav#mobile ul li:last-child a {
+	border: 0;
+}
+/*Header*/
+header {
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #FFF;
+	padding: 10px;
+	z-index: 3;
+	-webkit-box-shadow: 0 2px 2px #666;
+	-moz-box-shadow: 0 2px 2px #666;
+	box-shadow: 0 2px 2px #666;
+}
+header strong {
+	display: none;
+}
+header a {
+	background-image: url(../images/motorola_logo_black.gif);
+	float: none;
+}
+/*Video*/
+section#videoSection {
+	padding-top: 50px;
+}
+section#videoSection h1 {
+	border-top: 0;
+}
+/*Tour*/
+section#tourSection {
+	padding-bottom: 70px;
+}
+section#tourSection a#download {
+	position: absolute;
+	bottom: 10px;
+	left: 5px;
+	float: none;
+	margin: 0;
+	background-size: 15px 26px;
+	background-position: 10px center;
+	background-color: #000;
+	font-size: 0.7em;
+}
+section#tourSection a#download:hover {
+	background-color: #000;
+}
+section#tourSection a#download span {
+	display: inline;
+}
+section#tourSection div#mobile {
+	padding: 350px 0 60px 0;
+	background-position: center bottom;
+}
+section#tourSection div#mobile a {
+	float: none;
+	width: 95%;
+	margin: 0 0 5px 0;
+	font-size: 1em;
+	text-transform: uppercase;
+	background-position: 98% center;
+}
+/*Solutions*/
+section#solutionsSection div.column {
+	font-size: 1.3em;
+}
+/* Footer */
+footer div#contact div#group {
+	width: 550px;
+	font-size: 1.2em;
+}
+footer div#contact div#group a span {
+	display: inline;
+}
+footer div#contact div#group a#clickToCall,
+footer div#contact div#group a#contactMe {
+	background-size: 10px 17px;
+}
+footer div#contact div#group a#clickToCall {
+	padding: 0 5px 5px 15px;
+}
+footer div#contact div#group a#contactMe {
+	padding: 0 0 5px 15px;
+	margin-right: 0;
+}
+footer div#terms {
+	width: 100%;
+	margin: 0;
+	padding: 10px 0;
+}
+}
+
+/***** Phone Only *****/
+
+@media only screen and (max-width : 640px) {
+/*Video*/
+section#videoSection p span {
+	display: inline;
+}
+section#videoSection div#desktop {
+	display: none;
+}
+section#videoSection div#mobile {
+	display: block;
+	position: relative;
+  	padding-bottom: 56.25%;
+	padding-top: 30px; 
+	height: 0; 
+	overflow: hidden;
+}
+section#videoSection div#mobile iframe,
+section#videoSection div#mobile object,
+section#videoSection div#mobile embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*Tour*/
+section#tourSection div#mobile {
+	display: none;
+}
+section#tourSection div#phone {
+	display: block;
+}
+section#tourSection div#phone div.container {
+	display: none;
+	position: relative;
+  	padding-bottom: 56.25%;
+	padding-top: 30px; 
+	height: 0; 
+	overflow: hidden;
+}
+section#tourSection div#phone div.container iframe,
+section#tourSection div#phone div.container object,
+section#tourSection div#phone div.container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+section#tourSection div#phone div#videoOne {
+	display: block;
+}
+section#tourSection div#phone a {
+	display: block;
+	width: 95%;
+	margin: 5px 0 0 0;
+	padding: 5px 20px 5px 5px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "UniversLTW01-57Condense 723821";
+	font-weight: normal;
+	font-size: 1em;
+	color: #FFF;
+	background-color: #00A0DF;
+	background-image: url(../images/icon_arrow_blue.gif);
+	background-position: 98% center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+/*Solutions*/
+section#solutionsSection div.column {
+	margin: 0 10px 0 0;
+	width: 99%;
+}
+}
+
+@media only screen and (max-width : 500px) {
+/*Video*/
+section#videoSection h1 span {
+	display: block;
+}
+/*Tour*/
+section#tourSection h1 span {
+	display: block;
+}
+section#tourSection a#download span {
+	display: block;
+}
+section#tourSection div#phone a {
+	width: 93%;
+}
+/*Footer*/
+footer div#contact div#group {
+	width: 100%;
+}
+footer div#contact div#group a#clickToCall,
+footer div#contact div#group a#contactMe {
+	background-size: 10px 17px;
+	border: 0;
+	padding: 0 0 2px 15px;
+	margin: 5px 0 5px 10px;
+}
+
+/***** HD Devices *****/
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.1),
+only screen and (min--moz-device-pixel-ratio: 1.1),
+only screen and (-ms-min-device-pixel-ratio: 1.1),
+only screen and (-o-min-device-pixel-ratio: 2/1.9),
+only screen and (min-device-pixel-ratio: 1.1),
+only screen and (min-resolution: 101dpi),
+only screen and (min-resolution: 1.1dppx) {
+header a {
+	background-image: url(../images/motorola_logo_black@2x.gif);
+	background-size: 164px 31px;
+}
+nav#mobile a#menu {
+	background-image: url(../images/nav_mobile@2x.gif);
+	background-size: 25px 18px;
+}
+nav#mobile a#menu.close {
+	background-image: url(../images/nav_mobile_close@2x.gif);
+	background-size: 25px 18px;
+}
+section#tourSection div#mobile a {
+	background-image: url(../images/icon_arrow_blue@2x.gif);
+	background-size: 12px 11px;
+}
+section#tourSection div#phone a {
+	background-image: url(../images/icon_arrow_blue@2x.gif);
+	background-size: 12px 11px;
+}
+}
