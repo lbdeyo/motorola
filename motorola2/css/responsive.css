@@ -193,8 +193,6 @@ footer div#contact div#group a#clickToCall {
         top: 20px;
     }
 
-
-
 }
 
 /***** Tablet Portrait and Phone *****/
@@ -490,6 +488,18 @@ footer div#contact div#group a#clickToCall {
         height: 100%;
     }
     /*Tour*/
+
+    section#tourSection h1 {
+        color: #cbcbcb;
+        font-size: 1.6em;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border: none;
+        display: inline-block;
+        width: 80%;
+        margin-top: -300px;
+
+    }
     section#tourSection div#mobile {
         display: none;
     }
@@ -672,17 +682,7 @@ footer div#contact div#group a#clickToCall {
         display: none;
     }
 
-    section#tourSection h1 {
-        color: #cbcbcb;
-        font-size: 1.6em;
-        padding-bottom: 20px;
-        padding-top: -10px;
-        border: none;
-        display: inline-block;
-        width: 90%;
-        margin-top: -350px;
 
-    }
 }
 
 /***** Video *****/
