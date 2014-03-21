@@ -11,7 +11,7 @@ section#tourSection div#desktop {
 }
 section#tourSection div#mobile {
     display: block;
-    background-image: url(../images/video_tour.jpg);
+    background-image: url(https://secure.eloqua.com/eloquaimages/clients/Motorola/{12081cfb-6fc7-47eb-aefd-2027c4b6ecc6}_1566video_tour.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,9 +31,18 @@ section#tourSection div#mobile a {
     text-transform: uppercase;
     padding: 5px 20px 5px 5px;
     background-color: #00A0DF;
-    background-image: url(../images/icon_arrow_blue.gif);
+    background-image: url(https://secure.eloqua.com/eloquaimages/clients/Motorola/{a4dad4f3-1917-4e86-83cf-131fddfa8aa0}_1566icon_arrow_blue.gif);
     background-position: 96% center;
     background-repeat: no-repeat;
+}
+
+
+section#videoSection div#desktop {
+    display: none;
+}
+
+section#videoSection div#mobile {
+    display: block;
 }
 
 
@@ -49,16 +58,29 @@ footer div#contact div#group a#clickToCall {
     margin-left: 5px;
 }
 
-#learnHowHeader {
-    position: relative;
-    width: 200px;
-}
+
 /***** Tablet Landscape *****/
 
 @media only screen and (max-width : 1070px) {
+    #topSection h1 {
+        border-top: solid 1px #ff7900;
+        padding-top: 30px;
+        font-size: 1.1em;
+    }
     /* General */
     div#wrapper {
         width: 85%;
+    }
+    #learnHowHeader {
+        position: relative;
+        width: 900px;
+    }
+    section#videoSection {
+        height: 368px;
+    }
+
+    section#videoSection h1 {
+        width: 45%;
     }
     /*Tour*/
     section#tourSection a#download {
@@ -69,6 +91,11 @@ footer div#contact div#group a#clickToCall {
         font-size: 0.75em;
     }
     /*Solutions*/
+
+    section#solutionsSection {
+        height: 420px;
+    }
+
     section#solutionsSection div.column {
         border-right: 0;
         margin: 0 50px 0 0;
@@ -105,6 +132,38 @@ footer div#contact div#group a#clickToCall {
         text-align: center;
         font-size: 0.6em;
     }
+    #radioPic {
+
+        position: relative;
+        right: 0px;
+        /*top: -400px;*/
+        width: 35%;
+        /*display: none;*/
+    }
+
+    #infographic {
+
+
+        position: relative;
+        bottom: 100px;
+        /*display: none;*/
+        display: inline-block;
+        float: right;
+        /*top: -100px;*/
+        /*margin-bottom: -250px;*/
+
+    }
+    .contentBlock
+    {
+        display: inline;
+        width: 40%;
+        position: relative;
+        padding-right: 0px;
+        margin-right: 0px;
+        left: 20px;
+        top: 0px;
+    }
+
 }
 
 /***** Tablet Portrait and Phone *****/
@@ -122,6 +181,13 @@ footer div#contact div#group a#clickToCall {
         padding: 0 10px 10px 10px;
         margin-bottom: 0;
     }
+
+    #topSection h1 {
+        border-top: solid 1px #ff7900;
+        padding-top: 70px;
+        font-size: 1.5em;
+    }
+
     /*Navigation*/
     nav#desktop {
         display: none;
@@ -151,14 +217,14 @@ footer div#contact div#group a#clickToCall {
     nav#mobile a#menu {
         width: 25px;
         height: 18px;
-        background-image: url(../images/nav_mobile.gif);
+        background-image: url(https://secure.eloqua.com/eloquaimages/clients/Motorola/{cc6819a9-032a-4384-8baa-3936bd3bc628}_1566nav_mobile.gif);
         position: relative;
         z-index: 5;
         text-indent: -9999px;
         overflow: hidden;
     }
     nav#mobile a#menu.close {
-        background-image: url(../images/nav_mobile_close.gif);
+        background-image: url(https://secure.eloqua.com/eloquaimages/clients/Motorola/{316469b1-9c6c-4c8c-a03b-0b0353e42a5b}_1566nav_mobile_close.gif);
     }
     nav#mobile ul {
         position: fixed;
@@ -195,7 +261,7 @@ footer div#contact div#group a#clickToCall {
         display: none;
     }
     header a {
-        background-image: url(../images/motorola_logo_black.gif);
+        background-image: url(https://secure.eloqua.com/eloquaimages/clients/Motorola/{62cc8a03-87f9-4467-ace8-3e80d7979c71}_1566motorola_logo_black.gif);
         float: none;
     }
 
@@ -292,9 +358,7 @@ footer div#contact div#group a#clickToCall {
     section#videoSection p span {
         display: inline;
     }
-    section#videoSection div#desktop {
-        /*display: none;*/
-    }
+
     section#videoSection div#mobile {
         display: block;
         position: relative;
@@ -353,7 +417,7 @@ footer div#contact div#group a#clickToCall {
         font-size: 1em;
         color: #FFF;
         background-color: #00A0DF;
-        background-image: url(../images/icon_arrow_blue.gif);
+        background-image: url(https://secure.eloqua.com/eloquaimages/clients/Motorola/{a4dad4f3-1917-4e86-83cf-131fddfa8aa0}_1566icon_arrow_blue.gif);
         background-position: 98% center;
         background-repeat: no-repeat;
         cursor: pointer;
@@ -424,23 +488,17 @@ footer div#contact div#group a#clickToCall {
         color: #ff7900;
         padding-bottom: 40px;
     }
-    #infographic {
-        /*margin-bottom:100px;*/
-        /*left: 70%;*/
-        bottom: 178px;
-        position: relative;
-        display: none;
 
-    }
 
     section#topSection {
         /*height: 125px;*/
     }
     .contentBlock
     {
-        display: block;
+        display: inline;
         width: 300px;
         position: relative;
+        float: left;
         left: 20px;
         top: 20px;
     }
@@ -451,7 +509,7 @@ footer div#contact div#group a#clickToCall {
     .contentBlock2
     {
         display: block;
-        width: 300px;
+        width: 320px;
         /*position: relative;*/
         /*left: 20px;*/
         /*top: 20px;*/
@@ -465,6 +523,7 @@ footer div#contact div#group a#clickToCall {
     .grayText {
         margin-top: 20px;
         margin-bottom: 20px;
+        width: 45%;
     }
 
     #whitePaperGraphic {
@@ -490,11 +549,6 @@ footer div#contact div#group a#clickToCall {
         width: 75px;
     }
 
-    #topSection h1 {
-        border-top: solid 1px #ff7900;
-        padding-top: 75px;
-
-    }
 
     .sectionh1 {
         display: none;
@@ -550,23 +604,23 @@ only screen and (min-device-pixel-ratio: 1.1),
 only screen and (min-resolution: 101dpi),
 only screen and (min-resolution: 1.1dppx) {
     header a {
-        background-image: url(../images/motorola_logo_black@2x.gif);
+        background-image: url(https://secure.eloqua.com/eloquaimages/clients/Motorola/{675e4f90-8387-412c-88c4-efcb43c8e949}_1566motorola_logo_black_2x.gif);
         background-size: 164px 31px;
     }
     nav#mobile a#menu {
-        background-image: url(../images/nav_mobile@2x.gif);
+        background-image: url(https://secure.eloqua.com/eloquaimages/clients/Motorola/{53c16d7d-835a-45e8-9a49-927321ea1681}_1566nav_mobile_2x.gif);
         background-size: 25px 18px;
     }
     nav#mobile a#menu.close {
-        background-image: url(../images/nav_mobile_close@2x.gif);
+        background-image: url(https://secure.eloqua.com/eloquaimages/clients/Motorola/{9341af1f-0ad0-4aa1-ba71-f3998a222d46}_1566nav_mobile_close_2x.gif);
         background-size: 25px 18px;
     }
     section#tourSection div#mobile a {
-        background-image: url(../images/icon_arrow_blue@2x.gif);
+        background-image: url(https://secure.eloqua.com/eloquaimages/clients/Motorola/{3213acb0-7dd8-4278-9a2c-2366365da775}_1566icon_arrow_blue_2x.gif);
         background-size: 12px 11px;
     }
     section#tourSection div#phone a {
-        background-image: url(../images/icon_arrow_blue@2x.gif);
+        background-image: url(https://secure.eloqua.com/eloquaimages/clients/Motorola/{3213acb0-7dd8-4278-9a2c-2366365da775}_1566icon_arrow_blue_2x.gif);
         background-size: 12px 11px;
     }
 }

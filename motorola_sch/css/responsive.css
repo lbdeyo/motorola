@@ -11,12 +11,11 @@ section#tourSection div#desktop {
 }
 section#tourSection div#mobile {
     display: block;
-    background-image: url(../images/video_tour.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50px;
-    padding: 520px 10px 40px 10px;
+    /*background-position: center center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*height: 50px;*/
+    /*padding: 30px 0px 40px 10px;*/
 }
 section#tourSection div#mobile a {
     display: block;
@@ -215,6 +214,7 @@ footer div#contact div#group a#clickToCall {
     /*Tour*/
     section#tourSection {
         padding-bottom: 70px;
+
     }
     section#tourSection a#download {
         position: absolute;
@@ -245,7 +245,7 @@ footer div#contact div#group a#clickToCall {
     }
     section#tourSection div#mobile {
         padding: 350px 0 60px 0;
-        background-position: center bottom;
+
     }
     section#tourSection div#mobile a {
         float: none;
@@ -253,7 +253,7 @@ footer div#contact div#group a#clickToCall {
         margin: 0 0 5px 0;
         font-size: 1em;
         text-transform: uppercase;
-        background-position: 98% center;
+
     }
     /*Solutions*/
     section#solutionsSection div.column {
@@ -292,17 +292,25 @@ footer div#contact div#group a#clickToCall {
     section#videoSection p span {
         display: inline;
     }
+
+    section#videoSection {
+        padding: 0px;
+        height: 500px;
+    }
+
     section#videoSection div#desktop {
-        /*display: none;*/
+        display: none;
     }
     section#videoSection div#mobile {
-        display: block;
-        position: relative;
-        padding-bottom: 56.25%;
-        padding-top: 30px;
+        display: inline;
+        /*position: relative;*/
+        padding-bottom: 0;
+        /*padding-top: 0px;*/
         /*height: 0; */
-        height: 2000px;
-        overflow: hidden;
+        /*height: 2000px;*/
+        /*height: 450px;*/
+        /*overflow: hidden;*/
+        margin-bottom: 0px;
     }
     section#videoSection div#mobile iframe,
     section#videoSection div#mobile object,
@@ -313,9 +321,38 @@ footer div#contact div#group a#clickToCall {
         width: 100%;
         height: 100%;
     }
-    /*Tour*/
+
+
+
+
+    #infographic {
+        /*margin-bottom:100px;*/
+        /*left: 70%;*/
+        /*bottom: 178px;*/
+        /*position: relative;*/
+        padding-top: 30px;
+        padding-left: 15px;
+        float: none;
+
+    }
+
+
+
+
+    /*Tour Phone Only*/
+
+    section#toursection {
+        position: relative;
+        top: -50px;
+        padding: 0;
+        position: static;
+        left: -50px;
+        height: 600px;
+
+    }
     section#tourSection div#mobile {
-        display: none;
+        display: inline;
+        height: 1200px;
     }
     section#tourSection div#phone {
         display: block;
@@ -329,6 +366,7 @@ footer div#contact div#group a#clickToCall {
         height: 0;
         overflow: hidden;
     }
+
     section#tourSection div#phone div.container iframe,
     section#tourSection div#phone div.container object,
     section#tourSection div#phone div.container embed {
@@ -338,9 +376,11 @@ footer div#contact div#group a#clickToCall {
         width: 100%;
         height: 100%;
     }
+
     section#tourSection div#phone div#videoOne {
         display: block;
     }
+
     section#tourSection div#phone a {
         display: block;
         width: 95%;
@@ -358,7 +398,41 @@ footer div#contact div#group a#clickToCall {
         background-repeat: no-repeat;
         cursor: pointer;
     }
-    /*Solutions*/
+
+    #whitePaperGraphic {
+        /*padding: 20px;*/
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 50px;
+        /*display: none;*/
+    }
+
+    .formDiv {
+        /*float: right;*/
+        /*display: inline-block;*/
+        width: 90%;
+        padding: 0px;
+
+        margin-top: -50px;
+
+        /*margin-left: -110px;*/
+
+    }
+    .contentBlock
+    {
+        display: block;
+        width: 90%;
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+
+
+    /*Solutions phone only*/
+
+    section#solutionsSection {
+        height: 900px;
+    }
     section#solutionsSection div.column {
         margin: 0 10px 0 0;
         width: 99%;
@@ -369,11 +443,58 @@ footer div#contact div#group a#clickToCall {
         width: 300px;
 
     }
+
+
+    #radioPic {
+
+        position: relative;
+        right: -17px;
+        top: 50px;
+
+    }
+    .grayText {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .contentBlock2
+    {
+        display: block;
+        width: 460px;
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+
+
+    #inThisWhitepaper {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    .formTable {
+        width: 200px;
+        /*height: 315px;*/
+        /*display: inline-block;*/
+
+
+    }
+    input, select {
+        width: 75px;
+    }
+
 }
 
 
 @media only screen and (max-width : 500px) {
     /*Video*/
+
+    section#tourSection {
+        padding: 20px 0 0 0 ;
+        margin-left: -30px;
+        height: 600px;
+    }
     section#videoSection h1 span {
         display: block;
     }
@@ -408,13 +529,7 @@ footer div#contact div#group a#clickToCall {
     }
 
 
-    #radioPic {
 
-        position: relative;
-        right: 0px;
-        top: 0px;
-        display: none;
-    }
 
     #topLogo {
         padding-bottom: 20px;
@@ -424,71 +539,21 @@ footer div#contact div#group a#clickToCall {
         color: #ff7900;
         padding-bottom: 40px;
     }
-    #infographic {
-        /*margin-bottom:100px;*/
-        /*left: 70%;*/
-        bottom: 178px;
-        position: relative;
-        display: none;
 
-    }
 
     section#topSection {
         /*height: 125px;*/
     }
-    .contentBlock
-    {
-        display: block;
-        width: 300px;
-        position: relative;
-        left: 20px;
-        top: 20px;
-    }
 
-    .orangeHR{
-    }
-
-    .contentBlock2
-    {
-        display: block;
-        width: 300px;
-        /*position: relative;*/
-        /*left: 20px;*/
-        /*top: 20px;*/
-    }
 
 
     .smallText {
         font-size: .7em;
     }
 
-    .grayText {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    #whitePaperGraphic {
-        /*padding: 20px;*/
-        padding-top: 60px;
-        padding-right: 20px;
-        display: none;
-    }
-
-    #inThisWhitepaper {
-        padding-top: 10px;
-        padding-bottom: 10px;
-
-    }
-    .formTable {
-        width: 200px;
-        /*height: 315px;*/
-        /*display: inline-block;*/
 
 
-    }
-    input, select {
-        width: 75px;
-    }
+
 
     #topSection h1 {
         border-top: solid 1px #ff7900;

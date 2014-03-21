@@ -1,18 +1,15 @@
-/***** General *****/
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
-
 .orangeText {
-    color: #ff7900
+    color: #FF7900;
 }
 html {
-    background: url(../images/bg_dot.gif);
+    background: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{72a2254f-4c38-4e2f-97b9-d386628b3d28}_1566bg_dot.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 body {
-    /*font-family: Arial, Helvetica, sans-serif;*/
     font-family: "UniversLTW01-57Condense 723821";
     font-size: x-large;
     min-width: 980px;
@@ -21,96 +18,93 @@ header, section, footer, aside, nav, article, figure {
     display: block;
 }
 :focus {
-    outline: 0;
+    outline: 0 none;
 }
 :active {
-    outline:0;
+    outline: 0 none;
 }
 h1 {
     font-family: "UniversLTW01-67BoldCn";
-    font-weight: normal;
     font-size: 1.9em;
-    text-transform: uppercase;
-    /*padding-top: 20px;*/
+    font-weight: normal;
     line-height: 0.9em;
+    text-transform: uppercase;
 }
 h2 {
-    font-family: "UniversLTW01-67BoldCn";
-    font-weight: normal;
-    font-size: 1em;
-    text-transform: uppercase;
     color: #00A0DF;
+    font-family: "UniversLTW01-67BoldCn";
+    font-size: 1em;
+    font-weight: normal;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 ul {
-    list-style: none;
+    list-style: none outside none;
 }
 img {
-    border: 0;
+    border: 0 none;
 }
 div#wrapper {
-    width: 980px;
     margin: 0 auto;
+    width: 980px;
 }
 iframe {
-    border: 0;
+    border: 0 none;
     display: block;
 }
 section {
-    color: #FFF;
-    padding: 0 20px 20px 20px;
-    background-color: #000;
+    background-color: #000000;
+    color: #FFFFFF;
     margin-bottom: 20px;
+    padding: 0 20px 20px;
 }
 div.clear {
     clear: both;
-    height: 0px;
+    height: 0;
 }
 
-/***** Navigation *****/
-
+/*Navigation*/
 nav ul li a {
+    color: #FFFFFF;
+    cursor: pointer;
     display: block;
-    text-transform: uppercase;
-    color: #FFF;
     font-family: "UniversLTW01-67BoldCn";
     font-size: 16px;
     text-decoration: none;
-    cursor: pointer;
+    text-transform: uppercase;
 }
 nav a#menu {
-    display: block;
     background-position: center center;
     background-repeat: no-repeat;
     cursor: pointer;
+    display: block;
 }
 nav#mobile {
     display: none;
 }
 nav#desktop {
-    width: 50px;
-    height: 325px;
     float: left;
+    height: 25px;
     margin: 0 0 0 -50px;
     position: relative;
+    width: 50px;
 }
 nav#desktop a#menu {
-    width: 33px;
-    height: 90px;
-    background-color: rgb(255, 121, 0);
     background-color: rgba(255, 121, 0, 0.7);
-    margin: 225px 0 0 0;
+    height: 90px;
+    margin: 225px 0 0;
     padding: 12px 0 0 17px;
+    width: 33px;
 }
 nav#desktop a#menu div {
-    color: #d8d7d7;
-    font-size: 0.5em;
-    font-family: "UniversLTW01-57Condense 723821";
-    margin: -33px 0 0 -17px;
-    text-transform: uppercase;
     background-color: #939393;
+    color: #D8D7D7;
+    font-family: "UniversLTW01-57Condense 723821";
+    font-size: 0.5em;
+    margin: -33px 0 0 -17px;
     padding: 3px 0;
     text-align: center;
+    text-transform: uppercase;
     width: 50px;
 }
 nav#desktop a#menu div#open {
@@ -126,20 +120,19 @@ nav#desktop a#menu div#close.show {
     display: block;
 }
 nav#desktop a#menu.dots1 {
-    background-image: url(../images/nav-dots1.png);
+    background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{d1b1301e-e581-4575-9073-1da6d3de9cfa}_1566nav-dots1.png");
 }
 nav#desktop a#menu.dots2 {
-    background-image: url(../images/nav-dots2.png);
+    background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{ec5f38da-7ab7-486b-b42c-553f1e87c52c}_1566nav-dots2.png");
 }
 nav#desktop a#menu.dots3 {
-    background-image: url(../images/nav-dots3.png);
+    background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{16d2dddc-f4df-4730-9fb9-5be040d7ca3d}_1566nav-dots3.png");
 }
 nav#desktop ul {
+    background-color: rgba(255, 121, 0, 0.7);
+    left: 50px;
     position: absolute;
     top: 225px;
-    left: 50px;
-    background-color: rgb(255, 121, 0);
-    background-color: rgba(255, 121, 0, 0.7);
     width: 230px;
     z-index: 3;
 }
@@ -150,73 +143,54 @@ nav#desktop ul li a {
 nav#desktop ul li a:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
-
-/***** Header *****/
-
 header {
-    background-color: #000;
+    background-color: #000000;
     padding: 20px;
 }
 header strong {
-    font-family: "UniversLTW01-67BoldCn";
-    font-weight: normal;
+    color: #FFFFFF;
     display: block;
-    text-align: right;
+    font-family: "UniversLTW01-67BoldCn";
     font-size: 0.7em;
-    color: #FFF;
+    font-weight: normal;
+    text-align: right;
 }
 header a {
-    text-indent: -9999px;
-    overflow: hidden;
-    width: 164px;
-    height: 31px;
-    display: block;
-    background-image: url(../images/motorola_logo_white.gif);
-    background-position: center 0px;
+    background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{89d96d7f-0e98-48a0-b953-c20a98081dfe}_1566motorola_logo_white.gif");
+    background-position: center 0;
     background-repeat: no-repeat;
-    float: left;
+    display: block;
+    height: 31px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 164px;
 }
-
 td p {
     font-size: 14pt;
 }
-
 #topSection h1 {
-    border-top: solid 1px #ff7900;
-    /*padding-top: 25px;*/
-    /*margin-top: -50px;*/
-
+    border-top: 1px solid #FF7900;
 }
-
-/***** Video *****/
-
 section#videoSection h1 {
-    color: #cbcbcb;
+    border-bottom: 1px solid #666666;
+    color: #CBCBCB;
     font-size: 1.6em;
     padding-bottom: 20px;
-    border-bottom: solid 1px #666666;
-
-
 }
-
 section#solutionsSection h1 {
-    color: #cbcbcb;
+    border-bottom: 1px solid #666666;
+    color: #CBCBCB;
     font-size: 1.6em;
     padding-bottom: 20px;
-    border-bottom: solid 1px #666666;
-
-
 }
-
-
 section#videoSection {
-    height: 275px;
+    height: 250px;
+    padding: 20px 20px 0 20px;
 }
-
 section#videoSection p {
+    font-family: "UniversLTW01-57Condense 723821";
     font-size: 0.9em;
     margin-bottom: 20px;
-    font-family: "UniversLTW01-57Condense 723821";
 }
 section#videoSection p span {
     display: block;
@@ -228,403 +202,318 @@ section#videoSection div#desktop {
     position: relative;
 }
 section#videoSection div#desktop a#videoPlayer {
+    border-radius: 50%;
+    height: 96px;
+    left: 50%;
+    margin: -48px 0 0 -48px;
     position: absolute;
     top: 50%;
-    left: 50%;
-    z-index: 2;
-    margin: -48px 0 0 -48px;
     width: 96px;
-    height: 96px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+    z-index: 2;
 }
 section#videoSection div#desktop a#videoPlayer:hover {
-    -webkit-box-shadow: 0 0 80px #fff;
-    -moz-box-shadow: 0 0 80px #fff;
-    box-shadow: 0 0 80px #fff
+    box-shadow: 0 0 80px #FFFFFF;
 }
 section#videoSection div#desktop a#videoPlayer span {
-    display: block;
-    width: 96px;
-    height: 96px;
-    background-image: url(../images/icon_video_arrow.gif);
-    background-position: center 0px;
+    background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{0acaec70-ddff-4c90-a783-3d8262ead48e}_1566icon_video_arrow.gif");
+    background-position: center 0;
     background-repeat: no-repeat;
-    text-indent: -9999px;
+    display: block;
+    height: 96px;
     overflow: hidden;
+    text-indent: -9999px;
+    width: 96px;
 }
 section#videoSection div#desktop a img {
-    width: 100%;
     height: auto;
     position: relative;
     z-index: 1;
 }
-
-/***** Tour *****/
-
 section#tourSection {
     position: relative;
-
+    padding: 20px;
+    /*height: 520px;*/
 }
 section#tourSection a#download {
-    display: block;
-    padding: 10px 15px 10px 40px;
-    background-color: #FFF;
-    background-image: url(../images/icon_download.gif);
+    background-color: #FFFFFF;
+    background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{3220a3bc-5c02-47f9-8796-d1faac5450f3}_1566icon_download.gif");
     background-position: 10px 12px;
     background-repeat: no-repeat;
-    float: right;
-    font-size: 0.7em;
-    font-family: "UniversLTW01-57Condense 723821";
     color: #00A0DF;
+    display: block;
+    float: right;
+    font-family: "UniversLTW01-57Condense 723821";
+    font-size: 0.7em;
+    /*margin-top: -85px;*/
+    padding: 10px 15px 10px 40px;
     text-decoration: none;
-    margin-top: -85px;
 }
-
 section#tourSection h1 {
-    color: #cbcbcb;
-    font-size: 1.6em;
-    padding-bottom: 20px;
-    padding-top: -10px;
-    border-bottom: solid 1px #666666;
+    border-bottom: 1px solid #666666;
+    color: #CBCBCB;
     display: inline-block;
+    font-size: 1.6em;
+    /*margin-top: -350px;*/
+    padding-bottom: 20px;
     width: 500px;
-    margin-top: -350px;
-
 }
 .mainOrange {
-    /*display: block;*/
 }
-
 .space {
-    /*margin: 5px;*/
-    /*display: block;*/
-    /*word-spacing: 5px;*/
     margin: 0 50px 0 10px;
 }
 #orangeBlock {
+    color: #FFFFFF;
     font-family: "UniversLTW01-67BoldCn";
-    text-align: center;
     font-size: 1.3em;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left:  auto;
+    margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
-    color: white;
-
+    margin-top: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
 }
-
 section#tourSection a#download:hover {
-    background-color: #CCC;
-    color: #FFF;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
 }
 section#tourSection a#download span {
     display: block;
 }
 section#tourSection div#desktop {
-    width: 1000px;
-    /*height: 650px;*/
     overflow: hidden;
+    width: 1000px;
 }
 section#tourSection div#desktop object {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
-section#tourSection div#mobile,
-section#tourSection div#phone {
+section#tourSection div#mobile, section#tourSection div#phone {
     display: none;
 }
-
-/***** Solutions *****/
-
-
-section#solutionsSection  {
-    margin-bottom: 20px;
-    height: 400px;
+section#solutionsSection {
+    height: 350px;
+    /*margin-bottom: 20px;*/
 }
-
 section#solutionsSection h1 {
-    margin-bottom: 20px;
-
+    /*margin-bottom: 20px;*/
 }
 section#solutionsSection div.column {
+    border-right: 1px solid #00A0DF;
     float: left;
     padding: 0 23px;
-    border-right: solid 1px #00A0DF;
 }
-/*section#solutionsSection div.last {*/
-    /*padding: 0 0 0 23px;*/
-    /*border-right: 0;*/
-/*}*/
 section#solutionsSection div.column ul li {
     margin-bottom: 10px;
 }
 section#solutionsSection div.column ul li a {
-    display: block;
-    font-size: 0.6em;
-    font-family: "UniversLTW01-57Condense 723821";
-    padding-right: 25px;
-    color: #FFF;
-    text-decoration: none;
-    background-image: url(../images/icon_arrow_black.gif);
+    background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{f6e867cb-5871-4cad-bb3b-5394da95f5ee}_1566icon_arrow_black.gif");
     background-position: right center;
     background-repeat: no-repeat;
+    color: #FFFFFF;
+    display: block;
+    font-family: "UniversLTW01-57Condense 723821";
+    font-size: 0.6em;
+    padding-right: 25px;
+    text-decoration: none;
 }
 section#solutionsSection div.column ul li a:hover {
     color: #00A0DF;
 }
-
-/***** Footer *****/
-
 .mobileFooter {
     display: none;
 }
 footer {
-    background-color: #FFF;
+    background-color: #FFFFFF;
     font-family: "UniversLTW01-57Condense 723821";
     font-size: 0.7em;
 }
-/* Contact */
 footer div#contact {
+    background-color: #FFFFFF;
+    box-shadow: 0 -2px 2px #666666;
     width: 100%;
-    background-color: #FFF;
-    -webkit-box-shadow: 0 -2px 2px #666;
-    -moz-box-shadow: 0 -2px 2px #666;
-    box-shadow: 0 -2px 2px #666;
 }
 footer div#contact div#group {
-    width: 440px;
-    padding: 10px 0;
     margin: 0 auto;
+    padding: 10px 0;
+    width: 440px;
 }
 footer div#contact div#group a {
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+    color: #333333;
     display: block;
     float: left;
-    background-position: 0px 3px;
-    background-repeat: no-repeat;
     margin: 0 10px 0 0;
+    padding: 0 0 5px;
     text-decoration: none;
-    color: #333;
-    padding: 0 0 5px 0;
 }
 footer div#contact div#group a span {
     display: block;
 }
 footer div#contact div#group a strong {
-    font-weight: normal;
+    color: #FF7900;
     font-family: "UniversLTW01-67BoldCn";
-    color: #ff7900;
+    font-weight: normal;
 }
 footer div#contact div#group a#clickToChat {
-    background-image: url(../images/icon_click-to-chat.gif);
+    background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{8d9a14f5-1c5c-4d00-b16f-103ed18519c8}_1566icon_click-to-chat.gif");
+    border-right: 1px solid #FF7900;
     padding: 0 20px 5px 50px;
-    border-right: solid 1px #ff7900;
 }
 footer div#contact div#group a#contactMe {
-    background-image: url(../images/icon_phone.gif);
+    background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{b17d840a-61a9-4389-b9df-47ab864ad243}_1566icon_phone.gif");
     padding-left: 30px;
 }
 footer div#contact div#group a#clickToCall {
-    background-image: url(../images/icon_phone.gif);
-    padding: 0 15px 5px 30px;
-    border-right: solid 1px #00A0DF;
+    background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{b17d840a-61a9-4389-b9df-47ab864ad243}_1566icon_phone.gif");
+    border-right: 1px solid #00A0DF;
     display: none;
+    padding: 0 15px 5px 30px;
 }
-/* Terms */
 footer div#terms {
     font-size: 0.8em;
-
 }
-
 #orangeRowBG {
-    background-color: #ff7900;
+    background-color: #FF7900;
 }
-
 footer div#terms a#logo {
-    text-indent: -9999px;
-    overflow: hidden;
-    width: 164px;
-    height: 31px;
-    display: block;
-    background-image: url(../images/motorola_logo_black.gif);
-    background-position: center 0px;
+    background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{62cc8a03-87f9-4467-ace8-3e80d7979c71}_1566motorola_logo_black.gif");
+    background-position: center 0;
     background-repeat: no-repeat;
+    display: block;
     float: left;
+    height: 31px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 164px;
 }
 footer div#terms p {
+    border-top: 1px solid #FF7900;
     float: right;
     padding-top: 5px;
-    border-top: solid 1px #ff7900;
 }
 footer div#terms p a {
+    color: #FF7900;
     text-decoration: none;
-    color: #ff7900;
 }
-
 .bottomBlock {
-    width: 960px;
     margin: 0 auto;
-    padding: 10px 10px 10px;
-
+    padding: 10px;
+    width: 960px;
 }
-
 #radioPic {
-    /*margin-top: -300px;*/
-    /*width: 420px;*/
-    position: relative;
-    right: -520px;
-    top: -220px;
+    float: right;
+    padding-top: 15px;
+    /*position: relative;*/
+    /*right: -520px;*/
+    /*top: -220px;*/
 }
-
 #topLogo {
     padding-bottom: 20px;
 }
-
 #mainSubhead {
-    color: #ff7900;
+    color: #FF7900;
     padding-bottom: 40px;
 }
 #infographic {
-    /*margin-bottom:100px;*/
-    /*left: 70%;*/
-    bottom: 178px;
-    position: relative;
-
+    /*bottom: 0px;*/
+    /*position: relative;*/
+    float: right;
 }
-
 section#topSection {
-    height: 125px;
+    height: 100px;
 }
-.contentBlock
-{
-    display: block;
-    width: 620px;
-    position: relative;
+.contentBlock {
+    display: inline-block;
+    width: 540px;
+}
+.orangeHR {
+}
+.contentBlock2 {
+    display: inline-block;
     left: 20px;
+    position: relative;
     top: 20px;
-}
-
-.orangeHR{
-}
-
-.contentBlock2
-{
-    display: block;
     width: 460px;
-    position: relative;
-    left: 20px;
-    top: 20px;
 }
-
-/*.sectionh1{*/
-/*color: #cbcbcb;*/
-/*min-width: 500px;*/
-/*border-bottom: solid 1px #666666;*/
-/*}*/
-
 .smallText {
-    font-size: .7em;
+    font-size: 0.7em;
 }
-
 .grayText {
-    margin-top: 20px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
-
 #whitePaperGraphic {
-    /*padding: 20px;*/
-    padding-top: 60px;
     padding-right: 20px;
-    /*float: left;*/
+    /*padding-top: 20px;*/
 }
-
 .whitePaperGraphicContainer {
     float: left;
 }
-
 .formDiv {
-    /*float: right;*/
-    /*margin-top: -50px;*/
 }
-
 #inThisWhitepaper {
-    padding-top: 10px;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 .formTable {
-    width: 500px;
     height: 315px;
-    /*display: inline-block;*/
-
-
+    width: 500px;
 }
-
 #learnHowHeader {
-    padding-top: 0px;
-    margin-top: -20px;
+    /*margin-top: -20px;*/
+    padding-top: 0;
 }
-
 #mainHeadline {
     padding-top: 20px;
 }
-
 input, select {
     width: 300px;
 }
-/***** HD Devices *****/
-
-@media
-only screen and (-webkit-min-device-pixel-ratio: 1.1),
-only screen and (min--moz-device-pixel-ratio: 1.1),
-only screen and (-ms-min-device-pixel-ratio: 1.1),
-only screen and (-o-min-device-pixel-ratio: 2/1.9),
-only screen and (min-device-pixel-ratio: 1.1),
-only screen and (min-resolution: 101dpi),
-only screen and (min-resolution: 1.1dppx) {
+@media not all, only screen and (min--moz-device-pixel-ratio: 1.1), not all, not all, not all, only screen and (min-resolution: 101dpi), only screen and (min-resolution: 1.1dppx) {
     nav#desktop a#menu.dots1 {
-        background-image: url(../images/nav_dots1@2x.gif);
+        background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{1e31bfb7-557a-4a3c-b67d-afb9bd41c1f8}_1566nav_dots1_2x.gif");
         background-size: 17px 77px;
     }
     nav#desktop a#menu.dots2 {
-        background-image: url(../images/nav_dots2@2x.gif);
+        background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{62550387-2bb8-433e-a5bb-3899ae093724}_1566nav_dots2_2x.gif");
         background-size: 17px 77px;
     }
     nav#desktop a#menu.dots3 {
-        background-image: url(../images/nav_dots3@2x.gif);
+        background-image: url("../images/nav_dots3@2x.gif");
         background-size: 17px 77px;
     }
     header a {
-        background-image: url(../images/motorola_logo_white@2x.gif);
+        background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{6ee9644e-75ea-45b9-9784-0fa2ff6f87b7}_1566nav_dots3_2x.gif");
         background-size: 164px 31px;
     }
     section#videoSection div#desktop a#videoPlayer span {
-        background-image: url(../images/icon_video_arrow@2x.gif);
+        background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{02d2dda0-f94b-4932-95cf-8513922e5e3a}_1566icon_video_arrow_2x.gif");
         background-size: 96px 96px;
     }
     section#tourSection a#download {
-        background-image: url(../images/icon_download@2x.gif);
+        background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{76e47c32-72f6-422f-afcc-f7bf19281331}_1566icon_download_2x.gif");
         background-size: 20px 36px;
     }
     section#solutionsSection div.column ul li a {
-        background-image: url(../images/icon_arrow_black@2x.gif);
+        background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{33717cda-ae77-4886-a47b-99f6a69a5438}_1566icon_arrow_black_2x.gif");
         background-size: 12px 11px;
     }
     footer div#contact div#group a#clickToChat {
-        background-image: url(../images/icon_click-to-chat@2x.gif);
+        background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{2ffd5262-b933-42aa-a9f1-8b01be183c89}_1566icon_click-to-chat_2x.gif");
         background-size: 41px 38px;
     }
     footer div#contact div#group a#contactMe {
-        background-image: url(../images/icon_phone@2x.gif);
+        background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{85240ff5-0c61-4390-91a5-9dd9e06e4ef2}_1566icon_phone_2x.gif");
         background-size: 22px 36px;
     }
     footer div#contact div#group a#clickToCall {
-        background-image: url(../images/icon_phone@2x.gif);
+        background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{85240ff5-0c61-4390-91a5-9dd9e06e4ef2}_1566icon_phone_2x.gif");
         background-size: 22px 36px;
     }
     footer div#terms a#logo {
-        background-image: url(../images/motorola_logo_black@2x.gif);
+        background-image: url("https://secure.eloqua.com/eloquaimages/clients/Motorola/{675e4f90-8387-412c-88c4-efcb43c8e949}_1566motorola_logo_black_2x.gif");
         background-size: 164px 31px;
     }
 }

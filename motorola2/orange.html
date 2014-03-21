@@ -1,0 +1,690 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+
+    <META NAME="WT.cg_n" CONTENT="Lowering Operational Costs Landing Page"/>
+    <META NAME="WT.cg_s" CONTENT="Lowering Operational Costs Landing Page"/>
+    <META NAME="WT.seg_1" CONTENT="B2B"/>
+    <META NAME="DCSext.locale" CONTENT="US-EN"/>
+    <META NAME="WT.pn.id" CONTENT="Lowering Operational Costs Landing Page"/>
+
+
+    <title>Motorola</title>
+    <link href="css/main.css " rel="stylesheet" type="text/css">
+    <link href="https://secure.eloqua.com/Web/Motorola/1566colorbox.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fast.fonts.net/cssapi/adefdd55-0692-4db4-b7cf-bfc9e1b00a52.css" rel="stylesheet" type="text/css">
+    <script src="https://secure.eloqua.com/Web/Motorola/1566jquery.min.js"></script>
+    <script src="https://secure.eloqua.com/Web/Motorola/1566jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="https://secure.eloqua.com/Web/Motorola/1566detectmobilebrowser.js"></script>
+    <script src="https://secure.eloqua.com/Web/Motorola/1566modernizr.js"></script>
+    <script src="https://secure.eloqua.com/Web/Motorola/1566jquery-scrolltofixed.js"></script>
+    <script src="https://secure.eloqua.com/Web/Motorola/1566jquery.colorbox.js"></script>
+
+    <script>
+        if (jQuery.browser.mobile) {
+            var css = document.createElement('link');
+            css.type = "text/css";
+            css.rel = "stylesheet";
+            css.href = "https://www.bulldogsolutions.net/MotorolaSolutions/MSI1566/alan/1566responsive.css";
+            var h = document.getElementsByTagName('head')[0];
+            h.appendChild(css);
+        }
+    </script>
+    <script type="text/javascript" language="JavaScript" src="https://www.motorolasolutions.com/web/Business/Resources/bms10/3rdParty/elqNow/elqCfg.js"></script>
+    <script type="text/javascript" language="JavaScript" src="https://www.motorolasolutions.com/web/Business/Resources/bms10/3rdParty/elqNow/elqImg.js"></script>
+
+
+    <!--[if lt IE 9]>
+    <script src="https://secure.eloqua.com/Web/Motorola/1566html5.js"></script>
+    <script src="https://secure.eloqua.com/Web/Motorola/1566css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <script TYPE='text/javascript' LANGUAGE='JavaScript'><!--//
+
+
+    function getQueryStringParam(name)
+    {
+        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regexString = "[\\?&]" + name + "=([^&#]*)";
+        var regex = new RegExp(regexString);
+        var found = regex.exec(window.location.search);
+        if(found == null)
+            return "";
+        else
+            return decodeURIComponent(found[1].replace(/\+/g, " "));
+    }
+
+    var cidQuery = getQueryStringParam('cid');
+    var mlsQuery = getQueryStringParam('mls');
+    var bdlsQuery = getQueryStringParam('bdls');
+    var vertQuery = getQueryStringParam('v');
+    var utmMediumQuery = getQueryStringParam('utm_medium');
+    var utmSourceQuery = getQueryStringParam('utm_source');
+    var utmCampaignQuery = getQueryStringParam('utm_campaign');
+    var elqPPS = '50';
+    var elqDLKey = escape('70cc4cee485e4adaa3d177e8c885c57e');
+    var elqDLLookup = '';
+
+
+    //--></script>
+
+    <script TYPE='text/javascript' LANGUAGE='JavaScript' SRC='https://www.motorolasolutions.com/web/Business/Resources/bms10/3rdParty/elqNow/elqCPers.js'></script>
+    <script TYPE='text/javascript' LANGUAGE='JavaScript'><!--//
+
+    var EmailAddress = GetElqContentPersonalizationValue('Email_Address');
+    if (EmailAddress == '')
+    {
+        elqPPS = '50';
+        elqDLKey = escape('e16a77e9-564f-42bd-8df5-6b510b8003c3');
+        elqDLLookup = '<ContactIDExt>'+elqid+'</ContactIDExt>';
+    }
+    else
+    {
+        elqPPS = '50';
+        elqDLKey = escape('d49bbe5e9f1f4219a2e1b02ad61e8d85');
+        elqDLLookup = '<C_EmailAddress>'+EmailAddress+'</C_EmailAddress>';
+    }
+
+    //--></script>
+    <script TYPE='text/javascript' LANGUAGE='JavaScript' SRC='https://www.motorolasolutions.com/web/Business/Resources/bms10/3rdParty/elqNow/elqCPers.js'></script>
+
+    <script TYPE='text/javascript' LANGUAGE='JavaScript'><!--//
+
+    var fname = '';
+    var lname = '';
+    var company = '';
+    var emailAddress = '';
+    var phone = '';
+    var vertical = '';
+    var country = '';
+
+    fname = GetElqContentPersonalizationValue('C_FirstName');
+    lname = GetElqContentPersonalizationValue('C_LastName');
+    company = GetElqContentPersonalizationValue('C_Company');
+    emailAddress = GetElqContentPersonalizationValue('C_EmailAddress');
+    vertical = GetElqContentPersonalizationValue('C_Eloqua_Segment1');
+    phone = GetElqContentPersonalizationValue('C_BusPhone');
+    country =  GetElqContentPersonalizationValue('C_Country');
+
+    function loadQuery()
+    {
+        document.getElementById('bdls').value = bdlsQuery;
+        document.getElementById('mls').value = mlsQuery;
+        document.getElementById('cid').value = cidQuery;
+        document.getElementById('vert').value = vertQuery;
+        document.getElementById('firstName').value = fname;
+        document.getElementById('lastName').value = lname;
+        document.getElementById('companyName').value = company;
+        document.getElementById('emailAddress').value = emailAddress;
+        document.getElementById('phone_number').value = phone;
+        document.getElementById('country').value = country;
+        document.getElementById('select_industry').value = vertical;
+        document.getElementById('utm_medium').value = utmMediumQuery;
+        document.getElementById('utm_source').value = utmSourceQuery;
+        document.getElementById('utm_campaign').value = utmCampaignQuery;
+    }
+
+    //--></script>
+
+    <script type='text/javascript' language='JavaScript'><!--//
+    var myCID = getQueryStringParam("cid");
+    var myMLS = getQueryStringParam('mls');
+    var myMedium = getQueryStringParam('utm_medium');
+    var mySource = getQueryStringParam('utm_source');
+    var myCampaign = getQueryStringParam('utm_campaign');
+
+    function gotoURL(url) {
+        window.open(url+'?utm_medium=' + myMedium + '&utm_source=' + mySource + '&utm_campaign=' + myCampaign + '&cid=' + myCID + '&mls=' + myMLS, '_blank');
+    }
+    //--></script>
+
+    <style>
+        label.error{color:red;font-size:14px;display:block}
+        #orangeBlock a {
+            color: #FFFFFF;
+            font-family: "UniversLTW01-67BoldCn";
+            text-align: center;
+            text-decoration:none;
+        }
+
+    </style>
+
+    <!-- Google Analytics Base Tag -->
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-9992425-1']);
+        _gaq.push(['_setDomainName', 'motorolasolutions.com']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+</head>
+
+<!-- WebTrends Base Tag -->
+<script language=JavaScript src="https://www.motorolasolutions.com/wrs/b2bsdc.js"  TYPE="text/JavaScript">
+</script>
+<NOSCRIPT>
+
+    <IMG BORDER="0" WIDTH="1" HEIGHT=""
+         SRC="https://statse.webtrendslive.com/dcsrq57cd100004fijcorigml_3c2w/njs.gif?dcsuri=/nojavascript&dcssip=secure.rm.motorolasolutions.com&tagver=8&si=150202&fw=0&js=No&jo=No">
+
+</NOSCRIPT>
+
+<body onload="loadQuery()">
+<div id="wrapper">
+<nav id="desktop"> <a id="menu" class="dots1">
+    <div id="close" class="show">Close</div>
+    <div id="open">Open</div>
+</a>
+    <ul>
+        <li class="video"><a>Download the infographic</a></li>
+        <li class="tour"><a>Get the whitepaper</a></li>
+        <li class="solutions"><a>Use the search tool</a></li>
+    </ul>
+</nav>
+<nav id="mobile"> <a id="menu">Menu</a>
+    <div id="cover"></div>
+    <ul>
+        <li class="video"><a>Download the infographic</a></li>
+        <li class="tour"><a>Get the whitepaper</a></li>
+        <li class="solutions"><a>Use the search tool</a></li>
+    </ul>
+</nav>
+<header>
+    <a href="https://www.motorolasolutions.com/US-EN/Business+Product+and+Services/Two-Way+Radios+and+Pagers+-+Business" target="_blank" alt="Motorola" >Motorola</a>
+</header>
+<section id="topSection">
+    <h1 id="mainHeadline">MANUFACTURERS ARE UP AND RUNNING        <span id="mainSubhead">FASTER WITH DIGITAL RADIOS.</span>
+    </h1>
+    <!--<span id="mainSubhead">FASTER WITH DIGITAL RADIOS.</span>-->
+</section>
+<section id="videoSection">
+
+    <div id="desktop">
+        <div class="contentBlock">
+            <h1>FIND OUT WHAT TECHNOLOGY REDUCES DOWNTIME.</h1>
+            <p class="grayText">Discover what technology is three times less likely to fail.</p>
+            <a href="https://secure.eloqua.com/Wesb/Motorola/MOT_Manufacturing_infoGraphic_Flat_032014_v2.pdf
+" target="_blank"><img id="downloadDetailsButton" src="https://secure.eloqua.com/eloquaimages/clients/Motorola/{494a1b74-1371-4c49-9557-f002cc0bc459}_1566downloadDetailsButton.png" alt="Download Details"></a>
+        </div>
+        <img id="infographic"  src="https://secure.eloqua.com/eloquaimages/clients/Motorola/{4668da8d-627b-48df-88a4-57fd5689729f}_1566infographic.png" alt="Download Details" style="bottom: 158px;">
+
+    </div>
+    <div id="mobile">
+        <div class="contentBlock">
+            <h1>FIND OUT WHAT TECHNOLOGY REDUCES DOWNTIME.</h1>
+            <p class="grayText">Discover what technology is three times<br> less likely to fail.</p>
+            <a href="https://secure.eloqua.com/Wesb/Motorola/MOT_Manufacturing_infoGraphic_Flat_032014_v2.pdf
+" target="_blank"><img id="downloadDetailsButton" src="https://secure.eloqua.com/eloquaimages/clients/Motorola/{494a1b74-1371-4c49-9557-f002cc0bc459}_1566downloadDetailsButton.png" alt="Download Details"></a>
+        </div>
+        <img id="infographic"  src="https://secure.eloqua.com/eloquaimages/clients/Motorola/{4668da8d-627b-48df-88a4-57fd5689729f}_1566infographic.png" alt="Download Details" style="bottom: 158px;">
+
+    </div>
+
+</section>
+
+
+
+<section id="tourSection">
+
+<div class="desktop">
+<div class="whitePaperGraphicContainer">
+    <img  id="whitePaperGraphic" src="https://secure.eloqua.com/eloquaimages/clients/Motorola/{75771fc9-08b3-48bf-aca8-a27e0b64a072}_1566whitepaper.png" alt="Leveraging Plant Communications">
+</div>
+<!--<div class="clear"></div>-->
+<div class="formDiv">
+<h1 id="learnHowHeader">Learn how digital radios improve plant performance. </h1>
+<p id="inThisWhitepaper">In this white paper, you'll discover how manufacturers can cut downtime by 27 percent.</p>
+<p class="smallText">For a free copy of the study, tell us about yourself.</p>
+
+<form id="elqForm" action="https://secure.eloqua.com/e/f2" onsubmit='return submitForm();' method="post">
+<input type="hidden" name="elqFormName" value="MSI1566">
+<input type="hidden" name="elqSiteID" value="2449">
+<INPUT id=bdls type=hidden name=bdls >
+<INPUT id=cid type=hidden name=cid >
+<INPUT id=mls type=hidden name=mls >
+<INPUT id=vert type=hidden name=vert >
+<INPUT id=utm_medium type=hidden name=utm_medium >
+<INPUT id=utm_source type=hidden name=utm_source >
+<INPUT id=utm_campaign type=hidden name=utm_campaign >
+<INPUT id=elqCookieWrite type=hidden name=elqCookieWrite >
+<INPUT id=elqCustomerGUID type=hidden name=elqCustomerGUID >
+
+<table class="formTable">
+<tr>
+    <td><p>Email:<span class = "orangeText">*</span></p>
+    </td>
+    <td><input class="required form-control" type="text" id="emailAddress" name="emailAddress"></td>
+</tr>
+<tr>
+    <td><p>First Name:<span class = "orangeText">*</span></p>
+    </td>
+    <td><input class="required form-control" type="text" id="firstName" name="firstName"></td>
+</tr>
+<tr>
+    <td><p>Last Name:<span class = "orangeText">*</span></p>
+    </td>
+    <td><input class="required form-control" type="text" id="lastName" name="lastName"></td>
+</tr>
+<tr>
+    <td><p>Company:<span class = "orangeText">*</span></p>
+    </td>
+    <td><input class="required form-control" type="text" id="companyName" name="companyName"></td>
+</tr>
+<tr>
+    <td><p>Phone:<span class = "orangeText">*</span></p>
+    </td>
+    <td><input class="required form-control" type="text" id="phone_number" name="phone_number"></td>
+</tr>
+<tr>
+    <td><p>Industry:<span class = "orangeText">*</span></p>
+    </td>
+    <td>
+        <select class="required form-control" id="select_industry" name="VerticalSegment">
+            <option value=""></option>
+            <option value="Airports">Airports</option>
+            <option value="Corrections">Corrections</option>
+            <option value="Education/K-12">Education/K-12</option>
+            <option value="Education - Higher Ed">Education - Higher Ed</option>
+            <option value="EMS">EMS</option>
+            <option value="Energy">Energy</option>
+            <option value="Federal Civilian Agencies">Federal Civilian Agencies</option>
+            <option value="Federal Department of Defense (DoD)">Federal Department of Defense (DoD)</option>
+            <option value="Federal Health Care">Federal Health Care</option>
+            <option value="Federal Law Enforcement Agency / Intelligence Agencies (LEA/IA)">Federal Law Enforcement Agency / Intelligence Agencies (LEA/IA)</option>
+            <option value="Federal Postal Services">Federal Postal Services</option>
+            <option value="Federal Transportation, Logistics, and Supply Chain (TLSC)">Federal Transportation, Logistics, and Supply Chain (TLSC)</option>
+            <option value="Fire">Fire</option>
+            <option value="Government Administration">Government Administration</option>
+            <option value="Government Transportation">Government Transportation</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Hospitality">Hospitality</option>
+            <option value="Human Services">Human Services</option>
+            <option value="Law Enforcement">Law Enforcement</option>
+            <option value="Manufacturing">Manufacturing</option>
+            <option value="Retail">Retail</option>
+            <option value="Seaports">Seaports</option>
+            <option value="Telecommunications & Media">Telecommunications & Media</option>
+            <option value="Transit">Transit</option>
+            <option value="Transportation & Logistics">Transportation & Logistics</option>
+            <option value="Wholesale Trade">Wholesale Trade</option>
+            <option value="Other">Other</option>
+        </select>
+    </td>
+</tr>
+<tr>
+<td><p>Country:<span class = "orangeText">*</span></p>
+</td>
+<td>
+<select class="required form-control"  name="country" id="country">
+<option selected="true" value=""></option>
+<option value="Afghanistan">Afghanistan</option>
+<option value="Albania">Albania</option>
+<option value="Algeria">Algeria</option>
+<option value="American Samoa">American Samoa</option>
+<option value="Andorra">Andorra</option>
+<option value="Angola">Angola</option>
+<option value="Anguilla">Anguilla</option>
+<option value="Antarctica">Antarctica</option>
+<option value="Antigua And Barbuda">Antigua And Barbuda</option>
+<option value="Argentina">Argentina</option>
+<option value="Armenia">Armenia</option>
+<option value="Aruba">Aruba</option>
+<option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
+<option value="Azerbaijan">Azerbaijan</option>
+<option value="Bahamas">Bahamas</option>
+<option value="Bahrain">Bahrain</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Barbados">Barbados</option>
+<option value="Belarus">Belarus</option>
+<option value="Belgium">Belgium</option>
+<option value="Belize">Belize</option>
+<option value="Benin">Benin</option>
+<option value="Bermuda">Bermuda</option>
+<option value="Bhutan">Bhutan</option>
+<option value="Bolivia">Bolivia</option>
+<option value="Bosnia And Herzegowina">Bosnia And Herzegowina</option>
+<option value="Botswana">Botswana</option>
+<option value="Bouvet Island">Bouvet Island</option>
+<option value="Brazil">Brazil</option>
+<option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+<option value="Brunei Darussalam">Brunei Darussalam</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Burkina Faso">Burkina Faso</option>
+<option value="Burundi">Burundi</option>
+<option value="Cambodia">Cambodia</option>
+<option value="Cameroon">Cameroon</option>
+<option value="Canada">Canada</option>
+<option value="Cape Verde">Cape Verde</option>
+<option value="Cayman Islands">Cayman Islands</option>
+<option value="Central African Republic">Central African Republic</option>
+<option value="Chad">Chad</option>
+<option value="Chile">Chile</option>
+<option value="China">China</option>
+<option value="Christmas Island">Christmas Island</option>
+<option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+<option value="Colombia">Colombia</option>
+<option value="Comoros">Comoros</option>
+<option value="Congo">Congo</option>
+<option value="Congo, The Drc">Congo, The Drc</option>
+<option value="Cook Islands">Cook Islands</option>
+<option value="Costa Rica">Costa Rica</option>
+<option value="Cote D'Ivoire">Cote D'Ivoire</option>
+<option value="Croatia (Local Name: Hrvatska)">Croatia (Local Name: Hrvatska)</option>
+<option value="Cuba">Cuba</option>
+<option value="Cyprus">Cyprus</option>
+<option value="Czech Republic">Czech Republic</option>
+<option value="Denmark">Denmark</option>
+<option value="Djibouti">Djibouti</option>
+<option value="Dominica">Dominica</option>
+<option value="Dominican Republic">Dominican Republic</option>
+<option value="East Timor">East Timor</option>
+<option value="Ecuador">Ecuador</option>
+<option value="Egypt">Egypt</option>
+<option value="El Salvador">El Salvador</option>
+<option value="Equatorial Guinea">Equatorial Guinea</option>
+<option value="Eritrea">Eritrea</option>
+<option value="Estonia">Estonia</option>
+<option value="Ethiopia">Ethiopia</option>
+<option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+<option value="Faroe Islands">Faroe Islands</option>
+<option value="Fiji">Fiji</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="France, Metropolitan">France, Metropolitan</option>
+<option value="French Guiana">French Guiana</option>
+<option value="French Polynesia">French Polynesia</option>
+<option value="French Southern Territories">French Southern Territories</option>
+<option value="Gabon">Gabon</option>
+<option value="Gambia">Gambia</option>
+<option value="Georgia">Georgia</option>
+<option value="Germany">Germany</option>
+<option value="Ghana">Ghana</option>
+<option value="Gibraltar">Gibraltar</option>
+<option value="Greece">Greece</option>
+<option value="Greenland">Greenland</option>
+<option value="Grenada">Grenada</option>
+<option value="Guadeloupe">Guadeloupe</option>
+<option value="Guam">Guam</option>
+<option value="Guatemala">Guatemala</option>
+<option value="Guinea">Guinea</option>
+<option value="Guinea-Bissau">Guinea-Bissau</option>
+<option value="Guyana">Guyana</option>
+<option value="Haiti">Haiti</option>
+<option value="Heard And Mc Donald Islands">Heard And Mc Donald Islands</option>
+<option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+<option value="Honduras">Honduras</option>
+<option value="Hong Kong">Hong Kong</option>
+<option value="Hungary">Hungary</option>
+<option value="Iceland">Iceland</option>
+<option value="India">India</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Iran (Islamic Republic Of)">Iran (Islamic Republic Of)</option>
+<option value="Iraq">Iraq</option>
+<option value="Ireland">Ireland</option>
+<option value="Israel">Israel</option>
+<option value="Italy">Italy</option>
+<option value="Jamaica">Jamaica</option>
+<option value="Japan">Japan</option>
+<option value="Jordan">Jordan</option>
+<option value="Kazakhstan">Kazakhstan</option>
+<option value="Kenya">Kenya</option>
+<option value="Kiribati">Kiribati</option>
+<option value="Korea, D.P.R.O.">Korea, D.P.R.O.</option>
+<option value="Korea, Republic Of">Korea, Republic Of</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Kyrgyzstan">Kyrgyzstan</option>
+<option value="Laos">Laos</option>
+<option value="Latvia">Latvia</option>
+<option value="Lebanon">Lebanon</option>
+<option value="Lesotho">Lesotho</option>
+<option value="Liberia">Liberia</option>
+<option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+<option value="Liechtenstein">Liechtenstein</option>
+<option value="Lithuania">Lithuania</option>
+<option value="Luxembourg">Luxembourg</option>
+<option value="Macau">Macau</option>
+<option value="Macedonia">Macedonia</option>
+<option value="Madagascar">Madagascar</option>
+<option value="Malawi">Malawi</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Maldives">Maldives</option>
+<option value="Mali">Mali</option>
+<option value="Malta">Malta</option>
+<option value="Marshall Islands">Marshall Islands</option>
+<option value="Martinique">Martinique</option>
+<option value="Mauritania">Mauritania</option>
+<option value="Mauritius">Mauritius</option>
+<option value="Mayotte">Mayotte</option>
+<option value="Mexico">Mexico</option>
+<option value="Micronesia, Federated States Of">Micronesia, Federated States Of</option>
+<option value="Moldova, Republic Of">Moldova, Republic Of</option>
+<option value="Monaco">Monaco</option>
+<option value="Mongolia">Mongolia</option>
+<option value="Montserrat">Montserrat</option>
+<option value="Morocco">Morocco</option>
+<option value="Mozambique">Mozambique</option>
+<option value="Myanmar (Burma)">Myanmar (Burma)</option>
+<option value="Namibia">Namibia</option>
+<option value="Nauru">Nauru</option>
+<option value="Nepal">Nepal</option>
+<option value="Netherlands">Netherlands</option>
+<option value="Netherlands Antilles">Netherlands Antilles</option>
+<option value="New Caledonia">New Caledonia</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Nicaragua">Nicaragua</option>
+<option value="Niger">Niger</option>
+<option value="Nigeria">Nigeria</option>
+<option value="Niue">Niue</option>
+<option value="Norfolk Island">Norfolk Island</option>
+<option value="Northern Mariana Islands">Northern Mariana Islands</option>
+<option value="Norway">Norway</option>
+<option value="Oman">Oman</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Palau">Palau</option>
+<option value="Panama">Panama</option>
+<option value="Papua New Guinea">Papua New Guinea</option>
+<option value="Paraguay">Paraguay</option>
+<option value="Peru">Peru</option>
+<option value="Philippines">Philippines</option>
+<option value="Pitcairn">Pitcairn</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Puerto Rico">Puerto Rico</option>
+<option value="Qatar">Qatar</option>
+<option value="Reunion">Reunion</option>
+<option value="Romania">Romania</option>
+<option value="Russian Federation">Russian Federation</option>
+<option value="Rwanda">Rwanda</option>
+<option value="Saint Kitts And Nevis">Saint Kitts And Nevis</option>
+<option value="Saint Lucia">Saint Lucia</option>
+<option value="Saint Vincent And The Grenadines">Saint Vincent And The Grenadines</option>
+<option value="Samoa">Samoa</option>
+<option value="San Marino">San Marino</option>
+<option value="Sao Tome And Principe">Sao Tome And Principe</option>
+<option value="Saudi Arabia">Saudi Arabia</option>
+<option value="Senegal">Senegal</option>
+<option value="Seychelles">Seychelles</option>
+<option value="Sierra Leone">Sierra Leone</option>
+<option value="Singapore">Singapore</option>
+<option value="Slovakia (Slovak Republic)">Slovakia (Slovak Republic)</option>
+<option value="Slovenia">Slovenia</option>
+<option value="Solomon Islands">Solomon Islands</option>
+<option value="Somalia">Somalia</option>
+<option value="South Africa">South Africa</option>
+<option value="South Georgia And South S.S.">South Georgia And South S.S.</option>
+<option value="Spain">Spain</option>
+<option value="Sri Lanka">Sri Lanka</option>
+<option value="St. Helena">St. Helena</option>
+<option value="St. Pierre And Miquelon">St. Pierre And Miquelon</option>
+<option value="Sudan">Sudan</option>
+<option value="Suriname">Suriname</option>
+<option value="Svalbard And Jan Mayen Islands">Svalbard And Jan Mayen Islands</option>
+<option value="Swaziland">Swaziland</option>
+<option value="Sweden">Sweden</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Syrian Arab Republic">Syrian Arab Republic</option>
+<option value="Taiwan, Province Of China">Taiwan, Province Of China</option>
+<option value="Tajikistan">Tajikistan</option>
+<option value="Tanzania, United Republic Of">Tanzania, United Republic Of</option>
+<option value="Thailand">Thailand</option>
+<option value="Togo">Togo</option>
+<option value="Tokelau">Tokelau</option>
+<option value="Tonga">Tonga</option>
+<option value="Trinidad And Tobago">Trinidad And Tobago</option>
+<option value="Tunisia">Tunisia</option>
+<option value="Turkey">Turkey</option>
+<option value="Turkmenistan">Turkmenistan</option>
+<option value="Turks And Caicos Islands">Turks And Caicos Islands</option>
+<option value="Tuvalu">Tuvalu</option>
+<option value="Uganda">Uganda</option>
+<option value="Ukraine">Ukraine</option>
+<option value="United Arab Emirates">United Arab Emirates</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="United States">United States</option>
+<option value="U.S. Minor Islands">U.S. Minor Islands</option>
+<option value="Uruguay">Uruguay</option>
+<option value="Uzbekistan">Uzbekistan</option>
+<option value="Vanuatu">Vanuatu</option>
+<option value="Venezuela">Venezuela</option>
+<option value="Viet Nam">Viet Nam</option>
+<option value="Virgin Islands (British)">Virgin Islands (British)</option>
+<option value="Virgin Islands (U.S.)">Virgin Islands (U.S.)</option>
+<option value="Wallis And Futuna Islands">Wallis And Futuna Islands</option>
+<option value="Western Sahara">Western Sahara</option>
+<option value="Yemen">Yemen</option>
+<option value="Yugoslavia (Serbia And Montenegro)">Yugoslavia (Serbia And Montenegro)</option>
+<option value="Zambia">Zambia</option>
+<option value="Zimbabwe">Zimbabwe</option>
+</select>
+</td>
+</tr>
+<tr>
+    <td colspan="2" >
+        <div class="checkbox">
+            <label>
+                <input name="Optin" id="Optin" type="checkbox" value="TRUE" style="width:30px;margin-top:10px;margin-bottom:10px;" checked>&nbsp;<div style="display:inline;font-size:16px;width:100px;">I would like to receive updates from Motorola.</div>
+            </label>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td colspan="2" >
+        <div>
+            <input id="elqForm_submit" name="submit" type="image" value="Submit" id="whitepaperButton" src="https://secure.eloqua.com/eloquaimages/clients/Motorola/{a2573619-9042-4c2b-adbc-6ffdbc941166}_1566getWhitepaperButton.png" style="width:235px" alt="Get the White Paper">
+        </div>
+    </td>
+</tr>
+</table>
+
+
+</form>
+</div>
+</div>
+
+</section>
+
+
+
+
+<section id="solutionsSection">
+    <div id="desktop">
+        <div class="contentBlock2">
+            <h1>FIND THE RIGHT DIGITAL RADIO FOR YOU.</h1>
+            <p class="grayText">Enter your information, and the interactive tool will do the rest, presenting you with the best options based on your needs.</p>
+            <a href="http://www.motorolasolutions.com/promo/US-EN/MOTOTRBO%2BRadio%2BSelector%2BTool%2BCampaign/" target="_blank"><img src="https://secure.eloqua.com/eloquaimages/clients/Motorola/{01101b7a-2792-40c3-ab6a-256a70037fc9}_1566useSearchToolButton.png" alt="Use the Search Tool"></a>
+        </div>
+        <img id="radioPic" src="https://secure.eloqua.com/eloquaimages/clients/Motorola/{dd103dea-7596-4d75-a60c-efe458bdfbf2}_1566radio_selection.png" alt="MOTOTRBO">
+    </div>
+
+
+</section>
+</div>
+
+
+<footer>
+
+
+    <div id="contact">
+        <div id="orangeRowBG">
+            <div id="orangeBlock" class="bottomBlock adesktop">
+                <span><span class="mainOrange"><a href="#" onclick="gotoURL('https://secure.rm.motorolasolutions.com/forms/PCR_Rebate_Form')">SAVE UP TO $1,250 ON MOTOTRBO&trade; DIGITAL RADIOS</a><a href="#" onclick="gotoURL('https://secure.rm.motorolasolutions.com/forms/PCR_Rebate_Form')"><img src="https://secure.eloqua.com/eloquaimages/clients/Motorola/{e53b5333-f56d-4988-b790-04debde8fa70}_1566orange_bg_arrow.png"></a></span><span class="space">&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; JAN 1 – APR 25, 2014 </span></span>
+            </div>
+            <div id="orangeBlock" class="bottomBlock amobile" style="text-align:right; display:none; ">
+                <span style="float:left"><span class="mainOrange"><a href="#" onclick="gotoURL('https://secure.rm.motorolasolutions.com/forms/PCR_Rebate_Form')")>SAVE UP TO $1,250 ON MOTOTRBO&trade; DIGITAL RADIOS</a></span><br /><span class="space" style="margin-right:0px">JAN 1 – APR 25, 2014 </span>
+        </span>
+                <a href="#" onclick="gotoURL('https://secure.rm.motorolasolutions.com/forms/PCR_Rebate_Form')" style="float:left"><img src="https://secure.eloqua.com/eloquaimages/clients/Motorola/{e53b5333-f56d-4988-b790-04debde8fa70}_1566orange_bg_arrow.png"></a>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+        <div class="mobileFooter">
+            <img src="https://secure.eloqua.com/eloquaimages/clients/Motorola/{4a18ebeb-c693-43d3-891e-3d1b4ae26d80}_speak_to_rep_1.gif ">
+        </div>
+        <div id="group">
+            <a href="tel:8777460334" id="clickToCall">Speak to a Representative Now
+                <strong>877-746-0334</strong></a><a href="https://livechat.boldchat.com/aid/2352119295241264573/bc.chat?resize=true&cbdid=8536628890703903219&wdid=2329207766181202835&vr=&vn=&vi=&ve=&vp=&iq=&curl=" target="_blank" onClick="window.open((window.pageViewer && pageViewer.link || function(link){return link;})(this.href + (this.href.indexOf('?')>=0 ? '&' : '?') + 'url=' + escape(document.location.href)), 'Chat367233609785093432', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=640,height=480');return false;" style="border-right: 1px solid #FF7900;"> <img src="https://secure.eloqua.com/eloquaimages/clients/Motorola/{b7af1a4f-7f32-4a9f-85ac-209513d5a782}_1566clicktochat.png" alt="Click to Chat"/></a><img src="https://secure.eloqua.com/eloquaimages/clients/Motorola/{c5802731-8067-4883-94f8-23be9cd9dd98}_1566speak_to_rep.png" alt="Speak to Rep">
+
+
+            <div class="clear"></div>
+        </div>
+
+    </div>
+    <div id="terms" class="bottomBlock">
+        <hr style="height:1px;margin-top:5px;margin-bottom:10px;border:0;border-top:1px solid #D8D7D7">
+        <a href="https://www.motorolasolutions.com/US-EN/Business+Product+and+Services/Two-Way+Radios+and+Pagers+-+Business" target=_"blank" id="logo">Motorola</a>
+        <p style="border-top:0px">Subject to Motorola Solutions, Inc. <a href="https://www.motorolasolutions.com/US-EN/About/Terms+of+Use" target="_blank">Terms of Use</a> and <a href="https://www.motorolasolutions.com/US-EN/About/Privacy+Policy" target="_blank">Privacy Policy</a>. &copy; 2014 Motorola Solutions, Inc. All rights reserved.</p>
+        <div class="clear"></div>
+
+    </div>
+</footer>
+<script src="https://secure.eloqua.com/Web/Motorola/1566rabinovici.js"></script>
+<script src="https://secure.eloqua.com/Web/Motorola/1566retina-1.1.0.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#close").click();
+        if (document.location.href.indexOf("#dload") < 0)
+            return;
+        else
+        {
+            if (jQuery.browser.mobile)
+                document.location="https://secure.rm.motorolasolutions.com/content/Lowering-Operational-Costs_Motorola_MFG_CTA"
+            else
+                $.colorbox({iframe: true, href:'https://secure.rm.motorolasolutions.com/content/Lowering-Operational-Costs_Motorola_MFG_CTA', width: 425, height: 425});
+        }
+    });
+</script>
+
+<script src="https://secure.eloqua.com/Web/Motorola/jquery.validate.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    // form validation
+    $('#elqForm').validate();
+</script>
+
+
+</body>
+</html>
+<script type="text/javascript">
+    <!--
+    if (navigator.appName == 'Netscape' || navigator.appName == 'Opera'){
+        document.write('<layer hidden=true><img src="https://s2449.t.eloqua.com/visitor/v200/svrGP?pps=60&siteid=2449&PURLSiteID=3&optin=disabled&PURLSiteAlternateDNSID=0&PURLContentWebPublishID=71&PURLRecordID=0&PURLGUID=85D8BF3B605D400698D0ED0025E82ECD&UseRelativePath=False&elq={00000000-0000-0000-0000-000000000000}&elq_ck=0" border=0 width=1 height=1 ><\/layer>');
+    }else{
+        document.write('<img style="display:none" src="https://s2449.t.eloqua.com/visitor/v200/svrGP?pps=60&siteid=2449&PURLSiteID=3&optin=disabled&PURLSiteAlternateDNSID=0&PURLContentWebPublishID=71&PURLRecordID=0&PURLGUID=85D8BF3B605D400698D0ED0025E82ECD&UseRelativePath=False&elq={00000000-0000-0000-0000-000000000000}&elq_ck=0" border=0 width=1 height=1 >');
+    }
+    -->
+</script>
